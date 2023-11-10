@@ -112,7 +112,7 @@ public class Main {
             }
         }
         try {
-            File outputFile = new File("C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\Map-of-cultural-and-historical-heritage-of-Macedonia\\Homework1\\JavaCode\\PipeAndFilter\\src\\main\\resources\\output.json");
+            File outputFile = new File("PipeAndFilter\\src\\main\\resources\\output.json");
             objectMapper.writeValue(outputFile, resultJsonArray);
             System.out.println("ArrayNode written to " + outputFile.getAbsolutePath());
         } catch (IOException e) {
