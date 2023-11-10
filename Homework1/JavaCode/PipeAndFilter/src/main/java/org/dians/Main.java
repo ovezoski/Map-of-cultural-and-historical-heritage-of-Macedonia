@@ -8,13 +8,16 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class Main {
     public static ArrayList<String>categories = (ArrayList<String>) getCategoryList();
     public static Map<String, List<String>> mapTagsAndValues = getTagsAndValuesMap();
 
-    public static File jsonFile=new File("C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\Map-of-cultural-and-historical-heritage-of-Macedonia\\Homework1\\JavaCode\\PipeAndFilter\\src\\main\\resources\\exported_data.json");
+    public static File jsonFile=new File("PipeAndFilter\\src\\main\\resources\\exported_data.json");
     public static ObjectMapper objectMapper= new ObjectMapper();
     public static ObjectNode objectNode= JsonNodeFactory.instance.objectNode();
     public static ArrayNode resultJsonArray = objectNode.putArray("ListJson");
