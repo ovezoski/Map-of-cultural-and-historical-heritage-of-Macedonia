@@ -1,4 +1,4 @@
-!["finki_logo"](http://ilt.finki.ukim.mk/wp-content/uploads/2016/10/Logo_FINKI_UKIM_EN.jpg)
+![FINKI UKIM Logo](http://ilt.finki.ukim.mk/wp-content/uploads/2016/10/Logo_FINKI_UKIM_EN.jpg)
 
 # Project for Software Design and Architecture
 
