@@ -17,7 +17,6 @@ public class Main {
     public static ObjectMapper objectMapper= new ObjectMapper();
     public static ObjectNode objectNode= JsonNodeFactory.instance.objectNode();
     public static ArrayNode resultJsonArray = objectNode.putArray("ListJson");
-    public static List<String> processedIds = new ArrayList<>();
 
     public static void main(String[] args) throws IOException, ElementNotFoundException {
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -88,21 +87,20 @@ public class Main {
         while (iterator.hasNext()){
             JsonNode featureNode = iterator.next();
             JsonNode propertiesNode = featureNode.get("properties");
-            if (processedIds.contains(propertiesNode.get("@id").asText().split("/")[1].trim()) ||
-                    propertiesNode.get("name") == null) continue;
+            ObjectNode newNode=null;
+            if (propertiesNode.get("name") == null) continue;
             for (Map.Entry<String, List<String>> entry:mapTagsAndValues.entrySet()){
                 if(propertiesNode.get(entry.getKey())!=null && entry.getValue().isEmpty() ||
                         propertiesNode.get(entry.getKey())!=null && entry.getValue().contains(propertiesNode.get(entry.getKey()).asText())){
-                    ObjectNode newNode=resultJsonArray.addObject();
+                    if (newNode==null)
+                        newNode=resultJsonArray.addObject();
                     List<Object>list=new ArrayList<>();
                     list.add(featureNode);
                     list.add(newNode);
                     pipeNewNode.runFilters(list);
-                    processedIds.add(propertiesNode.get("@id").asText().split("/")[1].trim());
                 }
             }
         }
-        System.out.println(processedIds);
         try {
             File outputFile = new File("PipeAndFilter\\src\\main\\resources\\output.json");
             objectMapper.writeValue(outputFile, resultJsonArray);
