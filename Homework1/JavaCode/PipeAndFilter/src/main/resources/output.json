@@ -8,28 +8,28 @@
 }, {
   "id" : "5360060",
   "name" : "Капан АН",
+  "latitude" : "42.0003007",
+  "longitude" : "21.436573",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "opening_hours" : "24/7",
-  "latitude" : "42.0003007",
-  "longitude" : "21.436573",
   "tourism" : "attraction"
 }, {
   "id" : "5360062",
   "name" : "Куршумли-ан",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0032939",
   "longitude" : "21.4367598",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
   "id" : "5360062",
   "name" : "Куршумли-ан",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0032939",
   "longitude" : "21.4367598",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
@@ -101,12 +101,12 @@
   "id" : "28214395",
   "name" : "Зоолошка градина скопје",
   "name:en" : "Skopje Zoo",
+  "latitude" : "42.0059957",
+  "longitude" : "21.4168368",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3220578",
   "opening_hours" : "09:00-18:00",
-  "latitude" : "42.0059957",
-  "longitude" : "21.4168368",
   "tourism" : "attraction"
 }, {
   "id" : "32463336",
@@ -128,19 +128,19 @@
   "id" : "32812963",
   "name" : "Музеј на Македонија",
   "name:en" : "Museum of Macedonia",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.003194",
   "longitude" : "21.4363088",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "tourism" : "museum"
 }, {
   "id" : "32855069",
   "name" : "Црква Св. Димитриј",
   "name:en" : "Church of St. Demetrius",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9983981",
   "longitude" : "21.4342365",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -148,10 +148,10 @@
   "id" : "32855069",
   "name" : "Црква Св. Димитриј",
   "name:en" : "Church of St. Demetrius",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9983981",
   "longitude" : "21.4342365",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -159,10 +159,10 @@
   "id" : "32855069",
   "name" : "Црква Св. Димитриј",
   "name:en" : "Church of St. Demetrius",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9983981",
   "longitude" : "21.4342365",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -177,24 +177,24 @@
   "id" : "32887087",
   "name" : "Музеј на современата уметност",
   "name:en" : "Contemporary Art Museum of Macedonia",
+  "latitude" : "42.0043142",
+  "longitude" : "21.4325172",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3117734",
   "opening_hours" : "Tu-Sa 10:00-15:00; Su 09:00-13:00",
-  "latitude" : "42.0043142",
-  "longitude" : "21.4325172",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
   "id" : "32887087",
   "name" : "Музеј на современата уметност",
   "name:en" : "Contemporary Art Museum of Macedonia",
+  "latitude" : "42.0043142",
+  "longitude" : "21.4325172",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3117734",
   "opening_hours" : "Tu-Sa 10:00-15:00; Su 09:00-13:00",
-  "latitude" : "42.0043142",
-  "longitude" : "21.4325172",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
@@ -325,18 +325,18 @@
   "id" : "34321470",
   "name" : "Младински Културен Центар",
   "name:en" : "Youth Cultural Center",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9965179",
   "longitude" : "21.442879",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "arts_centre"
 }, {
   "id" : "35996507",
   "name" : "Турски Театар",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0045703",
   "longitude" : "21.4379614",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "arts_centre"
 }, {
   "id" : "37372709",
@@ -349,18 +349,18 @@
   "id" : "37748507",
   "name" : "Саат Кула",
   "name:en" : "Clock Tower",
-  "addr:city" : "Битола",
   "latitude" : "41.0309344",
   "longitude" : "21.333901",
+  "addr:city" : "Битола",
   "historic" : "tower",
   "tourism" : "attraction"
 }, {
   "id" : "37748507",
   "name" : "Саат Кула",
   "name:en" : "Clock Tower",
-  "addr:city" : "Битола",
   "latitude" : "41.0309344",
   "longitude" : "21.333901",
+  "addr:city" : "Битола",
   "historic" : "tower",
   "tourism" : "attraction"
 }, {
@@ -463,10 +463,10 @@
   "id" : "38765140",
   "name" : "Католичка црква Пресвето срце Исусово",
   "name:en" : "Sacred Heart of Jesus",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9950932",
   "longitude" : "21.4176045",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -474,10 +474,10 @@
   "id" : "38765140",
   "name" : "Католичка црква Пресвето срце Исусово",
   "name:en" : "Sacred Heart of Jesus",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9950932",
   "longitude" : "21.4176045",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -485,10 +485,10 @@
   "id" : "38765140",
   "name" : "Католичка црква Пресвето срце Исусово",
   "name:en" : "Sacred Heart of Jesus",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9950932",
   "longitude" : "21.4176045",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -514,74 +514,74 @@
 }, {
   "id" : "44026574",
   "name" : "Султан Муратова џамија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0016521",
   "longitude" : "21.4411567",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship"
 }, {
   "id" : "44038503",
   "name" : "Саат-кула",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0020362",
   "longitude" : "21.4413913",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "tourism" : "attraction"
 }, {
   "id" : "44038732",
   "name" : "Иса-бегова џамија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.003259",
   "longitude" : "21.4415597",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "44038732",
   "name" : "Иса-бегова џамија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.003259",
   "longitude" : "21.4415597",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "44038943",
   "name" : "Алаџа-џамија",
   "name:en" : "Allaxha Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0046496",
   "longitude" : "21.4394979",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship"
 }, {
   "id" : "44039295",
   "name" : "Јаја-пашина џамија",
   "name:en" : "Yaya Pacha Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0076563",
   "longitude" : "21.4423466",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "44039295",
   "name" : "Јаја-пашина џамија",
   "name:en" : "Yaya Pacha Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0076563",
   "longitude" : "21.4423466",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "123273638",
   "name" : "Манастир Св. Пантелејмон",
   "name:en" : "Monastery Sv. Pantelejmon",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9768504",
   "longitude" : "21.3743601",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -589,10 +589,10 @@
   "id" : "123273638",
   "name" : "Манастир Св. Пантелејмон",
   "name:en" : "Monastery Sv. Pantelejmon",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9768504",
   "longitude" : "21.3743601",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -600,10 +600,10 @@
   "id" : "123273638",
   "name" : "Манастир Св. Пантелејмон",
   "name:en" : "Monastery Sv. Pantelejmon",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9768504",
   "longitude" : "21.3743601",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -801,77 +801,77 @@
   "id" : "172171547",
   "name" : "Национална галерија „Даут-пашин амам“",
   "name:en" : "Daut Pasha Hamam National Gallery",
+  "latitude" : "41.998911",
+  "longitude" : "21.4355586",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3133102",
   "opening_hours" : "Tu-Su 10:00-18:00",
-  "latitude" : "41.998911",
-  "longitude" : "21.4355586",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
   "id" : "172171547",
   "name" : "Национална галерија „Даут-пашин амам“",
   "name:en" : "Daut Pasha Hamam National Gallery",
+  "latitude" : "41.998911",
+  "longitude" : "21.4355586",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3133102",
   "opening_hours" : "Tu-Su 10:00-18:00",
-  "latitude" : "41.998911",
-  "longitude" : "21.4355586",
   "tourism" : "museum",
   "amenity" : "arts_centre"
 }, {
   "id" : "172178304",
   "name" : "Мустафа-пашина џамија",
   "name:en" : "Mustafa Pasha's Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0020559",
   "longitude" : "21.4352755",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "172178304",
   "name" : "Мустафа-пашина џамија",
   "name:en" : "Mustafa Pasha's Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0020559",
   "longitude" : "21.4352755",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "172180530",
   "name" : "Музеј на македонската борба",
   "name:en" : "Museum of the Macedonian struggle",
+  "latitude" : "41.9982848",
+  "longitude" : "21.4329425",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3256 667",
   "opening_hours" : "Tu-Su 10:00-18:00",
-  "latitude" : "41.9982848",
-  "longitude" : "21.4329425",
   "tourism" : "museum"
 }, {
   "id" : "172186249",
   "name" : "Меморијален центар на холокаустот на Евреите од Македонија",
   "name:en" : "Holocaust Memorial Center for the Jews of Macedonia",
+  "latitude" : "41.9984101",
+  "longitude" : "21.4331205",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3122697",
-  "latitude" : "41.9984101",
-  "longitude" : "21.4331205",
   "historic" : "memorial",
   "tourism" : "museum"
 }, {
   "id" : "172186249",
   "name" : "Меморијален центар на холокаустот на Евреите од Македонија",
   "name:en" : "Holocaust Memorial Center for the Jews of Macedonia",
+  "latitude" : "41.9984101",
+  "longitude" : "21.4331205",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3122697",
-  "latitude" : "41.9984101",
-  "longitude" : "21.4331205",
   "historic" : "memorial",
   "tourism" : "museum"
 }, {
@@ -914,10 +914,10 @@
   "id" : "175162437",
   "name" : "Св. Архангел Михаил",
   "name:en" : "Saint Michael the Archangel",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0022077",
   "longitude" : "21.4570304",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -925,10 +925,10 @@
   "id" : "175162437",
   "name" : "Св. Архангел Михаил",
   "name:en" : "Saint Michael the Archangel",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0022077",
   "longitude" : "21.4570304",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -936,29 +936,29 @@
   "id" : "175162437",
   "name" : "Св. Архангел Михаил",
   "name:en" : "Saint Michael the Archangel",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0022077",
   "longitude" : "21.4570304",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "175199074",
   "name" : "Saint Michael the Archangel",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0023722",
   "longitude" : "21.4567214",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "denomination" : "macedonian_orthodox"
 }, {
   "id" : "175265123",
   "name" : "Соборен храм Свети Климент Охридски",
   "name:en" : "Church of St. Clement of Ohrid",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9982824",
   "longitude" : "21.4264746",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -967,10 +967,10 @@
   "id" : "175265123",
   "name" : "Соборен храм Свети Климент Охридски",
   "name:en" : "Church of St. Clement of Ohrid",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9982824",
   "longitude" : "21.4264746",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -979,10 +979,10 @@
   "id" : "175265123",
   "name" : "Соборен храм Свети Климент Охридски",
   "name:en" : "Church of St. Clement of Ohrid",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9982824",
   "longitude" : "21.4264746",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -991,10 +991,10 @@
   "id" : "175265123",
   "name" : "Соборен храм Свети Климент Охридски",
   "name:en" : "Church of St. Clement of Ohrid",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9982824",
   "longitude" : "21.4264746",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -1003,10 +1003,10 @@
   "id" : "175391004",
   "name" : "Пресв. Богородица",
   "name:en" : "Holy Mother of God",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9961927",
   "longitude" : "21.4391375",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -1015,10 +1015,10 @@
   "id" : "175391004",
   "name" : "Пресв. Богородица",
   "name:en" : "Holy Mother of God",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9961927",
   "longitude" : "21.4391375",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -1027,10 +1027,10 @@
   "id" : "175391004",
   "name" : "Пресв. Богородица",
   "name:en" : "Holy Mother of God",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9961927",
   "longitude" : "21.4391375",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -1039,10 +1039,10 @@
   "id" : "175391004",
   "name" : "Пресв. Богородица",
   "name:en" : "Holy Mother of God",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9961927",
   "longitude" : "21.4391375",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -1057,30 +1057,30 @@
 }, {
   "id" : "175671949",
   "name" : "Св. Ѓорѓи",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0120358",
   "longitude" : "21.4437044",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "175671949",
   "name" : "Св. Ѓорѓи",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0120358",
   "longitude" : "21.4437044",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "175671949",
   "name" : "Св. Ѓорѓи",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0120358",
   "longitude" : "21.4437044",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -1088,90 +1088,90 @@
   "id" : "176040285",
   "name" : "Музеј на Град Скопје",
   "name:en" : "Museum of the City of Skopje",
+  "latitude" : "41.9912181",
+  "longitude" : "21.4288883",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3114742",
-  "latitude" : "41.9912181",
-  "longitude" : "21.4288883",
   "tourism" : "museum"
 }, {
   "id" : "176051871",
   "name" : "Спомен куќа на Мајка Тереза",
   "name:en" : "Memorial House of Mother Teresa",
+  "latitude" : "41.9939282",
+  "longitude" : "21.4307694",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3290674",
   "opening_hours" : "Mo-Fr 09:00-20:00, Sa-Su 09:00-14:00",
-  "latitude" : "41.9939282",
-  "longitude" : "21.4307694",
   "tourism" : "museum"
 }, {
   "id" : "176176613",
   "name" : "Св. Јован Крстител",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9930029",
   "longitude" : "21.4099171",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176176613",
   "name" : "Св. Јован Крстител",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9930029",
   "longitude" : "21.4099171",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176176613",
   "name" : "Св. Јован Крстител",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9930029",
   "longitude" : "21.4099171",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176334067",
   "name" : "Св. Георгиј",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0121418",
   "longitude" : "21.4241995",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176334067",
   "name" : "Св. Георгиј",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0121418",
   "longitude" : "21.4241995",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176334067",
   "name" : "Св. Георгиј",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0121418",
   "longitude" : "21.4241995",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "176448605",
   "name" : "Дом на Градежници",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9958385",
   "longitude" : "21.4269004",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "arts_centre"
 }, {
   "id" : "177401426",
@@ -1275,30 +1275,30 @@
 }, {
   "id" : "177683948",
   "name" : "Евагелистичка Методистичка Црква",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9965678",
   "longitude" : "21.4235502",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "177683948",
   "name" : "Евагелистичка Методистичка Црква",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9965678",
   "longitude" : "21.4235502",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "177683948",
   "name" : "Евагелистичка Методистичка Црква",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9965678",
   "longitude" : "21.4235502",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -1360,30 +1360,30 @@
 }, {
   "id" : "179607964",
   "name" : "Свети Илија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.985899",
   "longitude" : "21.4580119",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "179607964",
   "name" : "Свети Илија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.985899",
   "longitude" : "21.4580119",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "179607964",
   "name" : "Свети Илија",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.985899",
   "longitude" : "21.4580119",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -1391,12 +1391,12 @@
   "id" : "180363121",
   "name" : "Национална галерија на Македонија „Чифте-амам“",
   "name:en" : "Chifte Hammam National Gallery of Macedonia",
+  "latitude" : "42.0014097",
+  "longitude" : "21.4373979",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3227986",
   "opening_hours" : "Tu-Su 10:00-18:00",
-  "latitude" : "42.0014097",
-  "longitude" : "21.4373979",
   "tourism" : "gallery"
 }, {
   "id" : "180587526",
@@ -1745,11 +1745,11 @@
   "id" : "189884671",
   "name" : "Аквапарк",
   "name:en" : "Aquapark",
+  "latitude" : "42.0114684",
+  "longitude" : "21.403485",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "opening_hours" : "May-Sep: 10:00-20:00",
-  "latitude" : "42.0114684",
-  "longitude" : "21.403485",
   "tourism" : "attraction"
 }, {
   "id" : "189909367",
@@ -1813,27 +1813,27 @@
 }, {
   "id" : "192121734",
   "name" : "Џамија Ајдар Кади",
-  "addr:city" : "Битола",
   "latitude" : "41.0350971",
   "longitude" : "21.3384364",
+  "addr:city" : "Битола",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "192121734",
   "name" : "Џамија Ајдар Кади",
-  "addr:city" : "Битола",
   "latitude" : "41.0350971",
   "longitude" : "21.3384364",
+  "addr:city" : "Битола",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
 }, {
   "id" : "192121734",
   "name" : "Џамија Ајдар Кади",
-  "addr:city" : "Битола",
   "latitude" : "41.0350971",
   "longitude" : "21.3384364",
+  "addr:city" : "Битола",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
@@ -1857,9 +1857,9 @@
   "id" : "194610965",
   "name" : "Св. Софија",
   "name:en" : "Church of St. Sophia",
-  "addr:city" : "Ohrid",
   "latitude" : "41.1122375",
   "longitude" : "20.7939374",
+  "addr:city" : "Ohrid",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -1869,9 +1869,9 @@
   "id" : "194610965",
   "name" : "Св. Софија",
   "name:en" : "Church of St. Sophia",
-  "addr:city" : "Ohrid",
   "latitude" : "41.1122375",
   "longitude" : "20.7939374",
+  "addr:city" : "Ohrid",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -1881,9 +1881,9 @@
   "id" : "194610965",
   "name" : "Св. Софија",
   "name:en" : "Church of St. Sophia",
-  "addr:city" : "Ohrid",
   "latitude" : "41.1122375",
   "longitude" : "20.7939374",
+  "addr:city" : "Ohrid",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -1893,9 +1893,9 @@
   "id" : "194610965",
   "name" : "Св. Софија",
   "name:en" : "Church of St. Sophia",
-  "addr:city" : "Ohrid",
   "latitude" : "41.1122375",
   "longitude" : "20.7939374",
+  "addr:city" : "Ohrid",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -1905,9 +1905,9 @@
   "id" : "194610965",
   "name" : "Св. Софија",
   "name:en" : "Church of St. Sophia",
-  "addr:city" : "Ohrid",
   "latitude" : "41.1122375",
   "longitude" : "20.7939374",
+  "addr:city" : "Ohrid",
   "building" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -2168,9 +2168,9 @@
   "id" : "206275424",
   "name" : "Св. Троица",
   "name:en" : "Holy Trinity",
-  "addr:city" : "Крушево",
   "latitude" : "41.3651221",
   "longitude" : "21.2530069",
+  "addr:city" : "Крушево",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -2178,9 +2178,9 @@
   "id" : "206275424",
   "name" : "Св. Троица",
   "name:en" : "Holy Trinity",
-  "addr:city" : "Крушево",
   "latitude" : "41.3651221",
   "longitude" : "21.2530069",
+  "addr:city" : "Крушево",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -2188,9 +2188,9 @@
   "id" : "206275424",
   "name" : "Св. Троица",
   "name:en" : "Holy Trinity",
-  "addr:city" : "Крушево",
   "latitude" : "41.3651221",
   "longitude" : "21.2530069",
+  "addr:city" : "Крушево",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -2245,20 +2245,20 @@
   "id" : "209092691",
   "name" : "Стоби",
   "name:en" : "Stobi",
-  "phone" : "+389 75 210 752",
-  "opening_hours" : "Mo-Sa 08:00-16:00",
   "latitude" : "41.5500415",
   "longitude" : "21.9755211",
+  "phone" : "+389 75 210 752",
+  "opening_hours" : "Mo-Sa 08:00-16:00",
   "historic" : "archaeological_site",
   "tourism" : "attraction"
 }, {
   "id" : "209092691",
   "name" : "Стоби",
   "name:en" : "Stobi",
-  "phone" : "+389 75 210 752",
-  "opening_hours" : "Mo-Sa 08:00-16:00",
   "latitude" : "41.5500415",
   "longitude" : "21.9755211",
+  "phone" : "+389 75 210 752",
+  "opening_hours" : "Mo-Sa 08:00-16:00",
   "historic" : "archaeological_site",
   "tourism" : "attraction"
 }, {
@@ -2723,9 +2723,9 @@
   "id" : "217931793",
   "name" : "Залив на Коските",
   "name:en" : "Bay of Bones",
-  "opening_hours" : "Tu-Su 09:00-16:15",
   "latitude" : "40.9946609",
   "longitude" : "20.7979124",
+  "opening_hours" : "Tu-Su 09:00-16:15",
   "tourism" : "museum",
   "tourism_1" : "attraction"
 }, {
@@ -2903,18 +2903,18 @@
   "id" : "223869150",
   "name" : "Св. Спас",
   "name:en" : "Church of the Holy Savior",
-  "addr:city" : "Орман",
   "latitude" : "42.0700853",
   "longitude" : "21.3556185",
+  "addr:city" : "Орман",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "223869150",
   "name" : "Св. Спас",
   "name:en" : "Church of the Holy Savior",
-  "addr:city" : "Орман",
   "latitude" : "42.0700853",
   "longitude" : "21.3556185",
+  "addr:city" : "Орман",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -2953,30 +2953,30 @@
   "id" : "224113828",
   "name" : "Успение на Пресвета Богородица",
   "name:en" : "Assumption of the Most Holy Mother of God",
-  "addr:city" : "Крушево",
-  "phone" : "+38977790350;+38971323173",
   "latitude" : "41.3697596",
   "longitude" : "21.2462787",
+  "addr:city" : "Крушево",
+  "phone" : "+38977790350;+38971323173",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "224113828",
   "name" : "Успение на Пресвета Богородица",
   "name:en" : "Assumption of the Most Holy Mother of God",
-  "addr:city" : "Крушево",
-  "phone" : "+38977790350;+38971323173",
   "latitude" : "41.3697596",
   "longitude" : "21.2462787",
+  "addr:city" : "Крушево",
+  "phone" : "+38977790350;+38971323173",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "224254694",
   "name" : "Музеј на Илинденското востание и Крушевската Република",
   "name:en" : "Museum of the Ilinden Uprising and the Republic of Krushevo",
-  "addr:city" : "Крушево",
-  "phone" : "+38970619597;+38970356621",
   "latitude" : "41.3691154",
   "longitude" : "21.2452388",
+  "addr:city" : "Крушево",
+  "phone" : "+38970619597;+38970356621",
   "tourism" : "museum"
 }, {
   "id" : "224479816",
@@ -3125,11 +3125,11 @@
   "id" : "229930502",
   "name" : "Археолошки музеј на Македонија",
   "name:en" : "Archaeological Museum of Macedonia",
+  "latitude" : "41.9970517",
+  "longitude" : "21.4340186",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "opening_hours" : "Tu-Su 10:00-18:00",
-  "latitude" : "41.9970517",
-  "longitude" : "21.4340186",
   "tourism" : "museum"
 }, {
   "id" : "229939246",
@@ -3299,11 +3299,11 @@
   "id" : "239422349",
   "name" : "Порта Македонија",
   "name:en" : "Porta Macedonia",
+  "latitude" : "41.9944587",
+  "longitude" : "21.4322421",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 3151141",
-  "latitude" : "41.9944587",
-  "longitude" : "21.4322421",
   "historic" : "monument"
 }, {
   "id" : "240346454",
@@ -3338,10 +3338,10 @@
   "id" : "241085465",
   "name" : "Шарена Џамија",
   "name:en" : "Pasha's Mosque",
-  "addr:city" : "Tetovo",
-  "opening_hours" : "24/7",
   "latitude" : "42.0058475",
   "longitude" : "20.9667672",
+  "addr:city" : "Tetovo",
+  "opening_hours" : "24/7",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
@@ -3349,10 +3349,10 @@
   "id" : "241085465",
   "name" : "Шарена Џамија",
   "name:en" : "Pasha's Mosque",
-  "addr:city" : "Tetovo",
-  "opening_hours" : "24/7",
   "latitude" : "42.0058475",
   "longitude" : "20.9667672",
+  "addr:city" : "Tetovo",
+  "opening_hours" : "24/7",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
@@ -3360,10 +3360,10 @@
   "id" : "241085465",
   "name" : "Шарена Џамија",
   "name:en" : "Pasha's Mosque",
-  "addr:city" : "Tetovo",
-  "opening_hours" : "24/7",
   "latitude" : "42.0058475",
   "longitude" : "20.9667672",
+  "addr:city" : "Tetovo",
+  "opening_hours" : "24/7",
   "historic" : "yes",
   "amenity" : "place_of_worship",
   "tourism" : "attraction"
@@ -3675,24 +3675,24 @@
   "id" : "295526113",
   "name" : "Араста-џамија",
   "name:en" : "Arasta Mosque",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.00191",
   "longitude" : "21.4370676",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship"
 }, {
   "id" : "295526114",
   "name" : "Безистен",
-  "addr:city" : "skopje",
   "latitude" : "42.0015297",
   "longitude" : "21.4372506",
+  "addr:city" : "skopje",
   "historic" : "yes"
 }, {
   "id" : "299665984",
   "name" : "Црква „Св. Атанасиј“",
-  "addr:city" : "Radiovce",
   "latitude" : "41.9054735",
   "longitude" : "20.9622874",
+  "addr:city" : "Radiovce",
   "building" : "church"
 }, {
   "id" : "299666061",
@@ -3709,9 +3709,9 @@
 }, {
   "id" : "299667131",
   "name" : "Џамија во Радиовце",
-  "addr:city" : "Radiovce",
   "latitude" : "41.9076687",
   "longitude" : "20.9650556",
+  "addr:city" : "Radiovce",
   "amenity" : "place_of_worship"
 }, {
   "id" : "299894835",
@@ -3722,32 +3722,32 @@
 }, {
   "id" : "299894872",
   "name" : "Црква „Св. Никола“",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8949945",
   "longitude" : "20.9839735",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "299894872",
   "name" : "Црква „Св. Никола“",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8949945",
   "longitude" : "20.9839735",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "299895257",
   "name" : "Стара џамија во Теново",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8950423",
   "longitude" : "20.9842482",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship"
 }, {
   "id" : "299895325",
   "name" : "Нова џамија во Теново",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8922406",
   "longitude" : "20.9782737",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship"
 }, {
   "id" : "299896013",
@@ -3870,27 +3870,27 @@
 }, {
   "id" : "334220751",
   "name" : "Св. Атанасиј",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3594263",
   "longitude" : "21.532549",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "334220751",
   "name" : "Св. Атанасиј",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3594263",
   "longitude" : "21.532549",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "334220751",
   "name" : "Св. Атанасиј",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3594263",
   "longitude" : "21.532549",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -3898,9 +3898,9 @@
   "id" : "334220752",
   "name" : "Св. Архангел Михаил",
   "name:en" : "St. Archangel Michael",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3603981",
   "longitude" : "21.5343815",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -3908,9 +3908,9 @@
   "id" : "334220752",
   "name" : "Св. Архангел Михаил",
   "name:en" : "St. Archangel Michael",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3603981",
   "longitude" : "21.5343815",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -3918,9 +3918,9 @@
   "id" : "334220752",
   "name" : "Св. Архангел Михаил",
   "name:en" : "St. Archangel Michael",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3603981",
   "longitude" : "21.5343815",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -3928,9 +3928,9 @@
   "id" : "334220753",
   "name" : "Варошки Манастир",
   "name:en" : "Monastery of Varosh",
-  "opening_hours" : "Mo-Sa 07:00-16:00",
   "latitude" : "41.3602589",
   "longitude" : "21.53383",
+  "opening_hours" : "Mo-Sa 07:00-16:00",
   "religion" : "christian"
 }, {
   "id" : "334221236",
@@ -4309,10 +4309,10 @@
   "id" : "355764175",
   "name" : "Еврејска заедница во Република Македонија",
   "name:en" : "Jewish Community in the Republic of Macedonia",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "41.9977235",
   "longitude" : "21.4197481",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship"
 }, {
   "id" : "356219819",
@@ -4358,9 +4358,9 @@
   "id" : "356302520",
   "name" : "Св. Великомаченик Георгиј",
   "name:en" : "Church of St. George",
-  "addr:city" : "Старо Нагоричане",
   "latitude" : "42.198478",
   "longitude" : "21.8283274",
+  "addr:city" : "Старо Нагоричане",
   "historic" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -4369,9 +4369,9 @@
   "id" : "356302520",
   "name" : "Св. Великомаченик Георгиј",
   "name:en" : "Church of St. George",
-  "addr:city" : "Старо Нагоричане",
   "latitude" : "42.198478",
   "longitude" : "21.8283274",
+  "addr:city" : "Старо Нагоричане",
   "historic" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -4380,9 +4380,9 @@
   "id" : "356302520",
   "name" : "Св. Великомаченик Георгиј",
   "name:en" : "Church of St. George",
-  "addr:city" : "Старо Нагоричане",
   "latitude" : "42.198478",
   "longitude" : "21.8283274",
+  "addr:city" : "Старо Нагоричане",
   "historic" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -4391,9 +4391,9 @@
   "id" : "356302520",
   "name" : "Св. Великомаченик Георгиј",
   "name:en" : "Church of St. George",
-  "addr:city" : "Старо Нагоричане",
   "latitude" : "42.198478",
   "longitude" : "21.8283274",
+  "addr:city" : "Старо Нагоричане",
   "historic" : "church",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
@@ -4451,27 +4451,27 @@
 }, {
   "id" : "359584986",
   "name" : "Црква Св. Кирил и Методиј и Св. Бенедикт",
-  "addr:city" : "Охрид",
   "latitude" : "41.1110758",
   "longitude" : "20.8048116",
+  "addr:city" : "Охрид",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "359584986",
   "name" : "Црква Св. Кирил и Методиј и Св. Бенедикт",
-  "addr:city" : "Охрид",
   "latitude" : "41.1110758",
   "longitude" : "20.8048116",
+  "addr:city" : "Охрид",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "359584986",
   "name" : "Црква Св. Кирил и Методиј и Св. Бенедикт",
-  "addr:city" : "Охрид",
   "latitude" : "41.1110758",
   "longitude" : "20.8048116",
+  "addr:city" : "Охрид",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -4548,18 +4548,18 @@
   "id" : "365667200",
   "name" : "Св. Јован Крстител",
   "name:en" : "Sv. Jovan Krstitel",
-  "addr:city" : "Ѕвегор",
   "latitude" : "41.9677292",
   "longitude" : "22.8075895",
+  "addr:city" : "Ѕвегор",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "365667200",
   "name" : "Св. Јован Крстител",
   "name:en" : "Sv. Jovan Krstitel",
-  "addr:city" : "Ѕвегор",
   "latitude" : "41.9677292",
   "longitude" : "22.8075895",
+  "addr:city" : "Ѕвегор",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -4572,9 +4572,9 @@
 }, {
   "id" : "366449705",
   "name" : "Градска сцена",
-  "addr:city" : "Делчево",
   "latitude" : "41.9663319",
   "longitude" : "22.7720016",
+  "addr:city" : "Делчево",
   "amenity" : "arts_centre"
 }, {
   "id" : "369651291",
@@ -4623,9 +4623,9 @@
   "id" : "374361514",
   "name" : "Тулбе",
   "name:en" : "Tulbe",
-  "addr:city" : "Македонски Брод",
   "latitude" : "41.5086632",
   "longitude" : "21.2149659",
+  "addr:city" : "Македонски Брод",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -4633,9 +4633,9 @@
   "id" : "374361514",
   "name" : "Тулбе",
   "name:en" : "Tulbe",
-  "addr:city" : "Македонски Брод",
   "latitude" : "41.5086632",
   "longitude" : "21.2149659",
+  "addr:city" : "Македонски Брод",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -4643,9 +4643,9 @@
   "id" : "374361514",
   "name" : "Тулбе",
   "name:en" : "Tulbe",
-  "addr:city" : "Македонски Брод",
   "latitude" : "41.5086632",
   "longitude" : "21.2149659",
+  "addr:city" : "Македонски Брод",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -4660,12 +4660,12 @@
   "id" : "388871332",
   "name" : "Јавна Соба",
   "name:en" : "Public Room",
+  "latitude" : "41.9900338",
+  "longitude" : "21.4258958",
   "addr:city" : "Cкoпje",
   "addr:city:en" : "Skopje",
   "phone" : "+389 2 6092650",
   "opening_hours" : "08:00-24:00",
-  "latitude" : "41.9900338",
-  "longitude" : "21.4258958",
   "shop" : "art"
 }, {
   "id" : "393237748",
@@ -5579,18 +5579,18 @@
   "id" : "465292251",
   "name" : "Црква Свети Димитриј",
   "name:en" : "Chruch St. Dimitrij",
-  "addr:city" : "Kriva Palanka",
   "latitude" : "42.2022704",
   "longitude" : "22.3356681",
+  "addr:city" : "Kriva Palanka",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "465292251",
   "name" : "Црква Свети Димитриј",
   "name:en" : "Chruch St. Dimitrij",
-  "addr:city" : "Kriva Palanka",
   "latitude" : "42.2022704",
   "longitude" : "22.3356681",
+  "addr:city" : "Kriva Palanka",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -5628,18 +5628,18 @@
   "id" : "474873958",
   "name" : "Скопско кале",
   "name:en" : "Skopje Fortress",
-  "opening_hours" : "07:00-19:00",
   "latitude" : "42.0018674",
   "longitude" : "21.4326108",
+  "opening_hours" : "07:00-19:00",
   "historic" : "castle",
   "tourism" : "attraction"
 }, {
   "id" : "474873958",
   "name" : "Скопско кале",
   "name:en" : "Skopje Fortress",
-  "opening_hours" : "07:00-19:00",
   "latitude" : "42.0018674",
   "longitude" : "21.4326108",
+  "opening_hours" : "07:00-19:00",
   "historic" : "castle",
   "tourism" : "attraction"
 }, {
@@ -5702,9 +5702,9 @@
   "id" : "477021071",
   "name" : "Штакле",
   "name:en" : "Castle Stakle",
-  "opening_hours" : "24/7",
   "latitude" : "42.0055956",
   "longitude" : "21.4475562",
+  "opening_hours" : "24/7",
   "historic" : "castle"
 }, {
   "id" : "479137723",
@@ -5715,17 +5715,17 @@
 }, {
   "id" : "479804854",
   "name" : "Арабати баба-теќе",
-  "addr:city" : "Tetovo",
   "latitude" : "42.0039593",
   "longitude" : "20.9570146",
+  "addr:city" : "Tetovo",
   "amenity" : "place_of_worship"
 }, {
   "id" : "481086680",
   "name" : "Св. Благовештение",
   "name:en" : "Holy Annunciation",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3433247",
   "longitude" : "21.557818",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -5733,9 +5733,9 @@
   "id" : "481086680",
   "name" : "Св. Благовештение",
   "name:en" : "Holy Annunciation",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3433247",
   "longitude" : "21.557818",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -5743,9 +5743,9 @@
   "id" : "481086680",
   "name" : "Св. Благовештение",
   "name:en" : "Holy Annunciation",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3433247",
   "longitude" : "21.557818",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -5810,18 +5810,18 @@
   "id" : "488874782",
   "name" : "Црква Свети Никола - Аеродром",
   "name:en" : "Saint Nicholas",
-  "addr:city" : "Cкoпje",
   "latitude" : "41.9837758",
   "longitude" : "21.471558",
+  "addr:city" : "Cкoпje",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "488874782",
   "name" : "Црква Свети Никола - Аеродром",
   "name:en" : "Saint Nicholas",
-  "addr:city" : "Cкoпje",
   "latitude" : "41.9837758",
   "longitude" : "21.471558",
+  "addr:city" : "Cкoпje",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -6203,9 +6203,9 @@
   "id" : "581996078",
   "name" : "Св. Георгиј",
   "name:en" : "St. George",
-  "addr:city" : "Струга",
   "latitude" : "41.1772891",
   "longitude" : "20.6742226",
+  "addr:city" : "Струга",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -6213,9 +6213,9 @@
   "id" : "581996078",
   "name" : "Св. Георгиј",
   "name:en" : "St. George",
-  "addr:city" : "Струга",
   "latitude" : "41.1772891",
   "longitude" : "20.6742226",
+  "addr:city" : "Струга",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -6223,9 +6223,9 @@
   "id" : "581996078",
   "name" : "Св. Георгиј",
   "name:en" : "St. George",
-  "addr:city" : "Струга",
   "latitude" : "41.1772891",
   "longitude" : "20.6742226",
+  "addr:city" : "Струга",
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
@@ -6696,10 +6696,10 @@
 }, {
   "id" : "762181802",
   "name" : "Градска плажа",
-  "addr:city" : "Стар Дојран",
-  "opening_hours" : "08:00-18:00",
   "latitude" : "41.1876479",
   "longitude" : "22.7224924",
+  "addr:city" : "Стар Дојран",
+  "opening_hours" : "08:00-18:00",
   "tourism" : "attraction"
 }, {
   "id" : "770882635",
@@ -7185,10 +7185,10 @@
   "id" : "816588422",
   "name" : "Св. Преображение",
   "name:en" : "Holy Transfiguration",
-  "addr:city" : "Прилеп",
-  "phone" : "+38948413055",
   "latitude" : "41.3437815",
   "longitude" : "21.5567708",
+  "addr:city" : "Прилеп",
+  "phone" : "+38948413055",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7196,10 +7196,10 @@
   "id" : "816588422",
   "name" : "Св. Преображение",
   "name:en" : "Holy Transfiguration",
-  "addr:city" : "Прилеп",
-  "phone" : "+38948413055",
   "latitude" : "41.3437815",
   "longitude" : "21.5567708",
+  "addr:city" : "Прилеп",
+  "phone" : "+38948413055",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7207,10 +7207,10 @@
   "id" : "816588422",
   "name" : "Св. Преображение",
   "name:en" : "Holy Transfiguration",
-  "addr:city" : "Прилеп",
-  "phone" : "+38948413055",
   "latitude" : "41.3437815",
   "longitude" : "21.5567708",
+  "addr:city" : "Прилеп",
+  "phone" : "+38948413055",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7247,27 +7247,27 @@
 }, {
   "id" : "818900504",
   "name" : "Манастир Свети Ѓорѓи - Кнежино",
-  "addr:city" : "Кнежино",
   "latitude" : "41.5163053",
   "longitude" : "20.9213457",
+  "addr:city" : "Кнежино",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "818900504",
   "name" : "Манастир Свети Ѓорѓи - Кнежино",
-  "addr:city" : "Кнежино",
   "latitude" : "41.5163053",
   "longitude" : "20.9213457",
+  "addr:city" : "Кнежино",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "818900504",
   "name" : "Манастир Свети Ѓорѓи - Кнежино",
-  "addr:city" : "Кнежино",
   "latitude" : "41.5163053",
   "longitude" : "20.9213457",
+  "addr:city" : "Кнежино",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7357,9 +7357,9 @@
   "id" : "820259296",
   "name" : "Св. Петка",
   "name:en" : "St. Parascheva",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3482047",
   "longitude" : "21.5382982",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7367,9 +7367,9 @@
   "id" : "820259296",
   "name" : "Св. Петка",
   "name:en" : "St. Parascheva",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3482047",
   "longitude" : "21.5382982",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -7377,9 +7377,9 @@
   "id" : "820259296",
   "name" : "Св. Петка",
   "name:en" : "St. Parascheva",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3482047",
   "longitude" : "21.5382982",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -8089,19 +8089,19 @@
 }, {
   "id" : "858650998",
   "name" : "Могила на непобедените",
-  "addr:city" : "Прилеп",
-  "opening_hours" : "24/7",
   "latitude" : "41.3364217",
   "longitude" : "21.5534328",
+  "addr:city" : "Прилеп",
+  "opening_hours" : "24/7",
   "historic" : "memorial",
   "memorial" : "war_memorial"
 }, {
   "id" : "858653355",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3371258",
   "longitude" : "21.5548531",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -8109,9 +8109,9 @@
   "id" : "858653355",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3371258",
   "longitude" : "21.5548531",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -8119,9 +8119,9 @@
   "id" : "858653355",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3371258",
   "longitude" : "21.5548531",
+  "addr:city" : "Прилеп",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -8615,18 +8615,18 @@
   "id" : "881167086",
   "name" : "Манастир Св. Харалампие",
   "name:en" : "Saint Charalambos monastery",
-  "addr:city" : "Пресека",
   "latitude" : "41.9866198",
   "longitude" : "22.4818406",
+  "addr:city" : "Пресека",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "881167086",
   "name" : "Манастир Св. Харалампие",
   "name:en" : "Saint Charalambos monastery",
-  "addr:city" : "Пресека",
   "latitude" : "41.9866198",
   "longitude" : "22.4818406",
+  "addr:city" : "Пресека",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -8731,9 +8731,9 @@
   "id" : "886760580",
   "name" : "Влашки гробишта",
   "name:en" : "Aromanian Cemetery",
-  "addr:city" : "Крушево",
   "latitude" : "41.3660094",
   "longitude" : "21.2546604",
+  "addr:city" : "Крушево",
   "religion" : "christian"
 }, {
   "id" : "888421002",
@@ -9117,20 +9117,20 @@
   "id" : "896149100",
   "name" : "Леарница",
   "name:en" : "Foundry",
-  "addr:city" : "Крушево",
-  "phone" : "+38970356621;+38975202123",
   "latitude" : "41.3722171",
   "longitude" : "21.246667",
+  "addr:city" : "Крушево",
+  "phone" : "+38970356621;+38975202123",
   "museum" : "history",
   "tourism" : "museum"
 }, {
   "id" : "896149100",
   "name" : "Леарница",
   "name:en" : "Foundry",
-  "addr:city" : "Крушево",
-  "phone" : "+38970356621;+38975202123",
   "latitude" : "41.3722171",
   "longitude" : "21.246667",
+  "addr:city" : "Крушево",
+  "phone" : "+38970356621;+38975202123",
   "museum" : "history",
   "tourism" : "museum"
 }, {
@@ -11081,9 +11081,9 @@
   "id" : "961560036",
   "name" : "Св. Атанасиј Велики",
   "name:en" : "St. Athanasius the Great",
-  "addr:city" : "Битола",
   "latitude" : "41.0265534",
   "longitude" : "21.313902",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11091,9 +11091,9 @@
   "id" : "961560036",
   "name" : "Св. Атанасиј Велики",
   "name:en" : "St. Athanasius the Great",
-  "addr:city" : "Битола",
   "latitude" : "41.0265534",
   "longitude" : "21.313902",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11101,36 +11101,36 @@
   "id" : "961560036",
   "name" : "Св. Атанасиј Велики",
   "name:en" : "St. Athanasius the Great",
-  "addr:city" : "Битола",
   "latitude" : "41.0265534",
   "longitude" : "21.313902",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "961560037",
   "name" : "Собор на Сите Македонски Светители",
-  "addr:city" : "Битола",
   "latitude" : "41.0263727",
   "longitude" : "21.3139956",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "961560037",
   "name" : "Собор на Сите Македонски Светители",
-  "addr:city" : "Битола",
   "latitude" : "41.0263727",
   "longitude" : "21.3139956",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "961560037",
   "name" : "Собор на Сите Македонски Светители",
-  "addr:city" : "Битола",
   "latitude" : "41.0263727",
   "longitude" : "21.3139956",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11325,9 +11325,9 @@
   "id" : "991653424",
   "name" : "Св. Петар и Павле",
   "name:en" : "St. Peter and St. Paul",
-  "addr:city" : "Kicevo",
   "latitude" : "41.5115602",
   "longitude" : "20.9633609",
+  "addr:city" : "Kicevo",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11335,9 +11335,9 @@
   "id" : "991653424",
   "name" : "Св. Петар и Павле",
   "name:en" : "St. Peter and St. Paul",
-  "addr:city" : "Kicevo",
   "latitude" : "41.5115602",
   "longitude" : "20.9633609",
+  "addr:city" : "Kicevo",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11345,9 +11345,9 @@
   "id" : "991653424",
   "name" : "Св. Петар и Павле",
   "name:en" : "St. Peter and St. Paul",
-  "addr:city" : "Kicevo",
   "latitude" : "41.5115602",
   "longitude" : "20.9633609",
+  "addr:city" : "Kicevo",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -11374,17 +11374,17 @@
 }, {
   "id" : "1010776749",
   "name" : "Црква „Св. Апостоли Петар и Павле“",
-  "addr:city" : "Скопје",
   "latitude" : "41.964528",
   "longitude" : "21.4934686",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "1010776749",
   "name" : "Црква „Св. Апостоли Петар и Павле“",
-  "addr:city" : "Скопје",
   "latitude" : "41.964528",
   "longitude" : "21.4934686",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -11405,9 +11405,9 @@
   "id" : "1023711400",
   "name" : "Џамија Мустафа Челеби",
   "name:en" : "Mustafa Çelebi Mosque",
-  "addr:city" : "Струга",
   "latitude" : "41.1782535",
   "longitude" : "20.6810013",
+  "addr:city" : "Струга",
   "amenity" : "place_of_worship"
 }, {
   "id" : "1041564193",
@@ -12573,27 +12573,27 @@
 }, {
   "id" : "1112340724",
   "name" : "Св. Архангел Гаврил",
-  "addr:city" : "Скопје",
   "latitude" : "42.0068303",
   "longitude" : "21.5076713",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "1112340724",
   "name" : "Св. Архангел Гаврил",
-  "addr:city" : "Скопје",
   "latitude" : "42.0068303",
   "longitude" : "21.5076713",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "1112340724",
   "name" : "Св. Архангел Гаврил",
-  "addr:city" : "Скопје",
   "latitude" : "42.0068303",
   "longitude" : "21.5076713",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -12733,9 +12733,9 @@
   "id" : "1116910801",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Битола",
   "latitude" : "41.028439",
   "longitude" : "21.3388996",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -12743,9 +12743,9 @@
   "id" : "1116910801",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Битола",
   "latitude" : "41.028439",
   "longitude" : "21.3388996",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -12753,9 +12753,9 @@
   "id" : "1116910801",
   "name" : "Св. Наум Охридски",
   "name:en" : "St. Naum of Ohrid",
-  "addr:city" : "Битола",
   "latitude" : "41.028439",
   "longitude" : "21.3388996",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -13177,9 +13177,9 @@
   "id" : "1134050938",
   "name" : "Св. Лидија Македонска",
   "name:en" : "St. Lydia of Macedonia",
-  "addr:city" : "Битола",
   "latitude" : "41.0259348",
   "longitude" : "21.3143028",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -13187,9 +13187,9 @@
   "id" : "1134050938",
   "name" : "Св. Лидија Македонска",
   "name:en" : "St. Lydia of Macedonia",
-  "addr:city" : "Битола",
   "latitude" : "41.0259348",
   "longitude" : "21.3143028",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -13197,9 +13197,9 @@
   "id" : "1134050938",
   "name" : "Св. Лидија Македонска",
   "name:en" : "St. Lydia of Macedonia",
-  "addr:city" : "Битола",
   "latitude" : "41.0259348",
   "longitude" : "21.3143028",
+  "addr:city" : "Битола",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -13347,9 +13347,9 @@
   "id" : "1137300477",
   "name" : "Св. Спас",
   "name:en" : "Church of the Ascension of Jesus",
-  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "latitude" : "42.0008855",
   "longitude" : "21.4356771",
+  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -13358,9 +13358,9 @@
   "id" : "1137300477",
   "name" : "Св. Спас",
   "name:en" : "Church of the Ascension of Jesus",
-  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "latitude" : "42.0008855",
   "longitude" : "21.4356771",
+  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -13369,9 +13369,9 @@
   "id" : "1137300477",
   "name" : "Св. Спас",
   "name:en" : "Church of the Ascension of Jesus",
-  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "latitude" : "42.0008855",
   "longitude" : "21.4356771",
+  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -13380,9 +13380,9 @@
   "id" : "1137300477",
   "name" : "Св. Спас",
   "name:en" : "Church of the Ascension of Jesus",
-  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "latitude" : "42.0008855",
   "longitude" : "21.4356771",
+  "opening_hours" : "Tu-Fr 09:00-17:00; Sa-Su 09:00-15:00",
   "building" : "church",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
@@ -13390,30 +13390,30 @@
 }, {
   "id" : "1137649645",
   "name" : "Св. Никола",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0220621",
   "longitude" : "21.4402421",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "1137649645",
   "name" : "Св. Никола",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0220621",
   "longitude" : "21.4402421",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
   "id" : "1137649645",
   "name" : "Св. Никола",
-  "addr:city" : "Cкoпje",
-  "addr:city:en" : "Skopje",
   "latitude" : "42.0220621",
   "longitude" : "21.4402421",
+  "addr:city" : "Cкoпje",
+  "addr:city:en" : "Skopje",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
@@ -13506,44 +13506,44 @@
   "id" : "1143766963",
   "name" : "Музеј на Битола",
   "name:en" : "Museum of Bitola",
-  "addr:city" : "Битола",
   "latitude" : "41.0234533",
   "longitude" : "21.3359067",
+  "addr:city" : "Битола",
   "museum" : "history",
   "tourism" : "museum"
 }, {
   "id" : "1143766963",
   "name" : "Музеј на Битола",
   "name:en" : "Museum of Bitola",
-  "addr:city" : "Битола",
   "latitude" : "41.0234533",
   "longitude" : "21.3359067",
+  "addr:city" : "Битола",
   "museum" : "history",
   "tourism" : "museum"
 }, {
   "id" : "1143774305",
   "name" : "Меморијален музеј Народен херој Кузман Јосифоски-Питу",
   "name:en" : "People's hero Kuzman Josifoski-Pitu Memorial museum",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3424673",
   "longitude" : "21.5597305",
+  "addr:city" : "Прилеп",
   "tourism" : "museum"
 }, {
   "id" : "1144895703",
   "name" : "Музеј",
   "name:en" : "Museum",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3429261",
   "longitude" : "21.5591038",
+  "addr:city" : "Прилеп",
   "museum" : "history",
   "tourism" : "museum"
 }, {
   "id" : "1144895703",
   "name" : "Музеј",
   "name:en" : "Museum",
-  "addr:city" : "Прилеп",
   "latitude" : "41.3429261",
   "longitude" : "21.5591038",
+  "addr:city" : "Прилеп",
   "museum" : "history",
   "tourism" : "museum"
 }, {
@@ -13638,26 +13638,26 @@
   "id" : "1218564775",
   "name" : "Ресенски сарај",
   "name:en" : "Saraj Resen",
-  "addr:city" : "Ресен",
   "latitude" : "41.0883096",
   "longitude" : "21.0157162",
+  "addr:city" : "Ресен",
   "tourism" : "attraction"
 }, {
   "id" : "1218569938",
   "name" : "Спомен-куќа на Татарчеви",
   "name:en" : "Tatarchev House",
-  "addr:city" : "Ресен",
   "latitude" : "41.0884486",
   "longitude" : "21.0137165",
+  "addr:city" : "Ресен",
   "museum" : "local",
   "tourism" : "museum"
 }, {
   "id" : "1218569938",
   "name" : "Спомен-куќа на Татарчеви",
   "name:en" : "Tatarchev House",
-  "addr:city" : "Ресен",
   "latitude" : "41.0884486",
   "longitude" : "21.0137165",
+  "addr:city" : "Ресен",
   "museum" : "local",
   "tourism" : "museum"
 }, {
@@ -13728,9 +13728,9 @@
   "id" : "172348137",
   "name" : "Природонаучен Музеј",
   "name:en" : "Macedonian Museum of Natural History",
-  "opening_hours" : "Tu-Su 09:00-16:00",
   "latitude" : "42.005709",
   "longitude" : "21.4174425",
+  "opening_hours" : "Tu-Su 09:00-16:00",
   "tourism" : "museum"
 }, {
   "id" : "287224902",
@@ -14038,18 +14038,18 @@
   "id" : "513836478",
   "name" : "Св. Богородица",
   "name:en" : "Sv. Bogodorica",
-  "addr:city" : "Делчево",
   "latitude" : "41.963915",
   "longitude" : "22.7749405",
+  "addr:city" : "Делчево",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "513836478",
   "name" : "Св. Богородица",
   "name:en" : "Sv. Bogodorica",
-  "addr:city" : "Делчево",
   "latitude" : "41.963915",
   "longitude" : "22.7749405",
+  "addr:city" : "Делчево",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -14077,9 +14077,9 @@
   "id" : "534925163",
   "name" : "Куќа на Робевци",
   "name:en" : "Robev Family House",
-  "opening_hours" : "Tu-Su 09:00-14:00",
   "latitude" : "41.112361",
   "longitude" : "20.7961416",
+  "opening_hours" : "Tu-Su 09:00-14:00",
   "tourism" : "museum"
 }, {
   "id" : "568027812",
@@ -15460,25 +15460,25 @@
 }, {
   "id" : "2574272024",
   "name" : "Теодор Тирон",
-  "addr:city" : "Крива Паланка",
   "latitude" : "42.1760396",
   "longitude" : "22.2929614",
+  "addr:city" : "Крива Паланка",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "2574272024",
   "name" : "Теодор Тирон",
-  "addr:city" : "Крива Паланка",
   "latitude" : "42.1760396",
   "longitude" : "22.2929614",
+  "addr:city" : "Крива Паланка",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "2578029313",
   "name" : "City Museum",
-  "addr:city" : "Kriva Palanka",
   "latitude" : "42.2020133",
   "longitude" : "22.3348959",
+  "addr:city" : "Kriva Palanka",
   "tourism" : "museum"
 }, {
   "id" : "2592611970",
@@ -15636,9 +15636,9 @@
   "id" : "2887575436",
   "name" : "Црква „Св. Апостоли Петар и Павле“",
   "name:en" : "Saints Peter and Paul the Apostles Church",
-  "addr:city" : "Скопје",
   "latitude" : "41.9644772",
   "longitude" : "21.4936632",
+  "addr:city" : "Скопје",
   "amenity" : "place_of_worship"
 }, {
   "id" : "2933604200",
@@ -15710,17 +15710,17 @@
 }, {
   "id" : "3039868345",
   "name" : "Црква „Св. Недела“ - Теново",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8829405",
   "longitude" : "20.9917833",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "3039868345",
   "name" : "Црква „Св. Недела“ - Теново",
-  "addr:city" : "Tenovo",
   "latitude" : "41.8829405",
   "longitude" : "20.9917833",
+  "addr:city" : "Tenovo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -15738,17 +15738,17 @@
 }, {
   "id" : "3175764807",
   "name" : "Manastir Svetka Petka",
-  "addr:city" : "cresevo",
   "latitude" : "42.0594793",
   "longitude" : "21.509645",
+  "addr:city" : "cresevo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "3175764807",
   "name" : "Manastir Svetka Petka",
-  "addr:city" : "cresevo",
   "latitude" : "42.0594793",
   "longitude" : "21.509645",
+  "addr:city" : "cresevo",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -15965,18 +15965,18 @@
   "id" : "3694794582",
   "name" : "Св. Јован Крстител",
   "name:en" : "Sv. Jovan Krstitel",
-  "addr:city" : "Ѕвегор",
   "latitude" : "41.967676",
   "longitude" : "22.8076575",
+  "addr:city" : "Ѕвегор",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "3694794582",
   "name" : "Св. Јован Крстител",
   "name:en" : "Sv. Jovan Krstitel",
-  "addr:city" : "Ѕвегор",
   "latitude" : "41.967676",
   "longitude" : "22.8076575",
+  "addr:city" : "Ѕвегор",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -16036,9 +16036,9 @@
   "id" : "3695988840",
   "name" : "КУД Гоце Делчев",
   "name:en" : "KUD Goce Delchev",
-  "addr:city" : "Делчево",
   "latitude" : "41.9663618",
   "longitude" : "22.7721162",
+  "addr:city" : "Делчево",
   "amenity" : "arts_centre"
 }, {
   "id" : "3695988841",
@@ -16058,18 +16058,18 @@
   "id" : "3696061335",
   "name" : "Св. Наум",
   "name:en" : "St. Naum",
-  "addr:city" : "Делчево",
   "latitude" : "41.9641339",
   "longitude" : "22.7747523",
+  "addr:city" : "Делчево",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "3696061335",
   "name" : "Св. Наум",
   "name:en" : "St. Naum",
-  "addr:city" : "Делчево",
   "latitude" : "41.9641339",
   "longitude" : "22.7747523",
+  "addr:city" : "Делчево",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -16222,9 +16222,9 @@
   "id" : "4064759493",
   "name" : "Св. Јован Крстител",
   "name:en" : "St. John the Baptist",
-  "addr:city" : "Кратово",
   "latitude" : "42.0758863",
   "longitude" : "22.1831257",
+  "addr:city" : "Кратово",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -16232,9 +16232,9 @@
   "id" : "4064759493",
   "name" : "Св. Јован Крстител",
   "name:en" : "St. John the Baptist",
-  "addr:city" : "Кратово",
   "latitude" : "42.0758863",
   "longitude" : "22.1831257",
+  "addr:city" : "Кратово",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -16242,9 +16242,9 @@
   "id" : "4064759493",
   "name" : "Св. Јован Крстител",
   "name:en" : "St. John the Baptist",
-  "addr:city" : "Кратово",
   "latitude" : "42.0758863",
   "longitude" : "22.1831257",
+  "addr:city" : "Кратово",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -16458,9 +16458,9 @@
   "id" : "4180539742",
   "name" : "Галерија на икони",
   "name:en" : "Icon Gallery",
-  "opening_hours" : "Tu-Su 09:00-14:00",
   "latitude" : "41.1143378",
   "longitude" : "20.7952385",
+  "opening_hours" : "Tu-Su 09:00-14:00",
   "tourism" : "gallery"
 }, {
   "id" : "4183631289",
@@ -16588,9 +16588,9 @@
   "id" : "4360784490",
   "name" : "Бања \"Ќежовица\"",
   "name:en" : "Spa-Center \"Kezovica\"",
-  "opening_hours" : "Mo-Su 08:00-20:00",
   "latitude" : "41.7330582",
   "longitude" : "22.1768285",
+  "opening_hours" : "Mo-Su 08:00-20:00",
   "tourism" : "attraction"
 }, {
   "id" : "4365876494",
@@ -16603,9 +16603,9 @@
   "id" : "4378846992",
   "name" : "Vila Varvarka",
   "name:en" : "Vila Varvarka",
-  "phone" : "+38975225868",
   "latitude" : "41.9130467",
   "longitude" : "21.4333848",
+  "phone" : "+38975225868",
   "historic" : "castle"
 }, {
   "id" : "4380846206",
@@ -16852,9 +16852,9 @@
 }, {
   "id" : "4741260650",
   "name" : "Atelje Bojar",
-  "phone" : "+38971730550",
   "latitude" : "41.9847107",
   "longitude" : "21.4220562",
+  "phone" : "+38971730550",
   "amenity" : "arts_centre"
 }, {
   "id" : "4745413067",
@@ -17127,27 +17127,27 @@
 }, {
   "id" : "5405804948",
   "name" : "Свети Тројца Архиереи",
-  "addr:city" : "Velestovo",
   "latitude" : "41.0881175",
   "longitude" : "20.8227937",
+  "addr:city" : "Velestovo",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
 }, {
   "id" : "5405804948",
   "name" : "Свети Тројца Архиереи",
-  "addr:city" : "Velestovo",
   "latitude" : "41.0881175",
   "longitude" : "20.8227937",
+  "addr:city" : "Velestovo",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
 }, {
   "id" : "5405804948",
   "name" : "Свети Тројца Архиереи",
-  "addr:city" : "Velestovo",
   "latitude" : "41.0881175",
   "longitude" : "20.8227937",
+  "addr:city" : "Velestovo",
   "amenity" : "place_of_worship",
   "tourism" : "attraction",
   "religion" : "christian"
@@ -17169,36 +17169,36 @@
   "id" : "5469804185",
   "name" : "Црква „Свети Илија„",
   "name:en" : "Church of St. Elijah",
-  "addr:city" : "Горно Лакочереј",
   "latitude" : "41.1827523",
   "longitude" : "20.7990502",
+  "addr:city" : "Горно Лакочереј",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "5469804185",
   "name" : "Црква „Свети Илија„",
   "name:en" : "Church of St. Elijah",
-  "addr:city" : "Горно Лакочереј",
   "latitude" : "41.1827523",
   "longitude" : "20.7990502",
+  "addr:city" : "Горно Лакочереј",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "5469827562",
   "name" : "Црква „Свети Спас“",
-  "addr:city" : "Село Горно Лакочереј",
-  "phone" : "+389 77 899 580",
   "latitude" : "41.1817025",
   "longitude" : "20.7932588",
+  "addr:city" : "Село Горно Лакочереј",
+  "phone" : "+389 77 899 580",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "5469827562",
   "name" : "Црква „Свети Спас“",
-  "addr:city" : "Село Горно Лакочереј",
-  "phone" : "+389 77 899 580",
   "latitude" : "41.1817025",
   "longitude" : "20.7932588",
+  "addr:city" : "Село Горно Лакочереј",
+  "phone" : "+389 77 899 580",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -17386,9 +17386,9 @@
   "id" : "5901740885",
   "name" : "Спомен плоча на Мајка Тереза",
   "name:en" : "Mother Teresa Old House Place",
-  "addr:city" : "Skopje",
   "latitude" : "41.9952759",
   "longitude" : "21.4319995",
+  "addr:city" : "Skopje",
   "historic" : "memorial"
 }, {
   "id" : "5926438456",
@@ -17416,10 +17416,10 @@
   "id" : "5932385385",
   "name" : "Резиденцијата Главинов",
   "name:en" : "Residence Glavinov",
-  "phone" : "+38970403406",
-  "opening_hours" : "24/7",
   "latitude" : "41.958616",
   "longitude" : "21.4422187",
+  "phone" : "+38970403406",
+  "opening_hours" : "24/7",
   "historic" : "castle"
 }, {
   "id" : "6020682284",
@@ -17565,10 +17565,10 @@
 }, {
   "id" : "6448580245",
   "name" : "Бигорски Манастир",
-  "addr:city" : "Mavrovo and Rostushe",
-  "phone" : "+389 (0) 42 333 399",
   "latitude" : "41.6207798",
   "longitude" : "20.6094915",
+  "addr:city" : "Mavrovo and Rostushe",
+  "phone" : "+389 (0) 42 333 399",
   "religion" : "christian"
 }, {
   "id" : "6471416045",
@@ -17625,16 +17625,16 @@
 }, {
   "id" : "6610723418",
   "name" : "Св. Кирил и Методиј,",
-  "addr:city" : "Штип",
   "latitude" : "41.7584182",
   "longitude" : "22.2049297",
+  "addr:city" : "Штип",
   "religion" : "christian"
 }, {
   "id" : "6610723419",
   "name" : "Св. Троица",
-  "addr:city" : "Штип",
   "latitude" : "41.764959",
   "longitude" : "22.1992659",
+  "addr:city" : "Штип",
   "religion" : "christian"
 }, {
   "id" : "6649560685",
@@ -17667,17 +17667,17 @@
 }, {
   "id" : "6775798435",
   "name" : "Св. Ѓорѓи",
-  "opening_hours" : "sunday",
   "latitude" : "41.5363785",
   "longitude" : "20.6936768",
+  "opening_hours" : "sunday",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "6775798435",
   "name" : "Св. Ѓорѓи",
-  "opening_hours" : "sunday",
   "latitude" : "41.5363785",
   "longitude" : "20.6936768",
+  "opening_hours" : "sunday",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -17763,9 +17763,9 @@
   "id" : "6959482985",
   "name" : "Изложбен центар",
   "name:en" : "Exhibition center",
-  "opening_hours" : "Tu-Su 10:00-15:00",
   "latitude" : "41.9529924",
   "longitude" : "21.2980962",
+  "opening_hours" : "Tu-Su 10:00-15:00",
   "tourism" : "attraction"
 }, {
   "id" : "6993445185",
@@ -17789,25 +17789,25 @@
   "id" : "7102244287",
   "name" : "Galerija RA",
   "name:en" : "Gallery RA",
-  "phone" : "+389075435402",
-  "opening_hours" : "Mo-Sa 10:00-20:00",
   "latitude" : "41.9989569",
   "longitude" : "21.3865879",
+  "phone" : "+389075435402",
+  "opening_hours" : "Mo-Sa 10:00-20:00",
   "tourism" : "museum"
 }, {
   "id" : "7121648908",
   "name" : "Свети Илија",
-  "addr:city" : "Стар Дојран",
   "latitude" : "41.1888901",
   "longitude" : "22.7192011",
+  "addr:city" : "Стар Дојран",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
   "id" : "7121648908",
   "name" : "Свети Илија",
-  "addr:city" : "Стар Дојран",
   "latitude" : "41.1888901",
   "longitude" : "22.7192011",
+  "addr:city" : "Стар Дојран",
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
@@ -19183,16 +19183,16 @@
 }, {
   "id" : "10049878740",
   "name" : "Muslim mosque",
-  "addr:city" : "Табановце",
   "latitude" : "42.2235516",
   "longitude" : "21.700367",
+  "addr:city" : "Табановце",
   "amenity" : "place_of_worship"
 }, {
   "id" : "10077532395",
   "name" : "4 Halifët",
-  "addr:city" : "Kicevo",
   "latitude" : "41.5204992",
   "longitude" : "20.951301",
+  "addr:city" : "Kicevo",
   "amenity" : "place_of_worship"
 }, {
   "id" : "10077532396",
@@ -19284,10 +19284,10 @@
 }, {
   "id" : "10204019572",
   "name" : "Дрини дент",
-  "phone" : "+389 46 781 143",
-  "opening_hours" : "Mo-Fr 10:00-17:00; Sa 09:00-14;00",
   "latitude" : "41.1756353",
   "longitude" : "20.6791018",
+  "phone" : "+389 46 781 143",
+  "opening_hours" : "Mo-Fr 10:00-17:00; Sa 09:00-14;00",
   "historic" : "memorial"
 }, {
   "id" : "10294842358",
@@ -19529,9 +19529,9 @@
 }, {
   "id" : "10951472385",
   "name" : "Sedlarevo Mosque",
-  "addr:city" : "Седларево",
   "latitude" : "41.8825844",
   "longitude" : "21.1272696",
+  "addr:city" : "Седларево",
   "amenity" : "place_of_worship"
 }, {
   "id" : "10951493047",

@@ -17,7 +17,6 @@ public class Main {
     public static ObjectMapper objectMapper= new ObjectMapper();
     public static ObjectNode objectNode= JsonNodeFactory.instance.objectNode();
     public static ArrayNode resultJsonArray = objectNode.putArray("ListJson");
-    public static List<String> attributes = getAttributeList();
 
     public static void main(String[] args) throws IOException, ElementNotFoundException {
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -38,77 +37,67 @@ public class Main {
             System.out.println(e.getMessage());
             return;
         }
+
+        Filter<List<Object>>filterForId=new FilterForId();
+        Filter<List<Object>>filterForName=new FilterForName();
+        Filter<List<Object>>filterForNameEn=new FilterForNameEn();
+        Filter<List<Object>>filterForCoordinates=new FilterForCoordinates();
+        Filter<List<Object>>filterForCity=new FilterForCity();
+        Filter<List<Object>>filterForCityEn=new FilterForCityEn();
+        Filter<List<Object>>filterForPhone=new FilterForPhone();
+        Filter<List<Object>>filterForOpeningHours=new FilterForOpeningHours();
+
+        Pipe<List<Object>>pipeNewNode=new Pipe<>();
+        pipeNewNode.addFilter(filterForId);
+        pipeNewNode.addFilter(filterForName);
+        pipeNewNode.addFilter(filterForNameEn);
+        pipeNewNode.addFilter(filterForCoordinates);
+        pipeNewNode.addFilter(filterForCity);
+        pipeNewNode.addFilter(filterForCityEn);
+        pipeNewNode.addFilter(filterForPhone);
+        pipeNewNode.addFilter(filterForOpeningHours);
+
+        for (String category:categories){
+            Filter<List<Object>>filterCategory = input -> {
+                JsonNode featureNode = (JsonNode) input.get(0);
+                JsonNode propertiesNode = featureNode.get("properties");
+                ObjectNode objectNode = (ObjectNode) input.get(1);
+                if(propertiesNode.get(category)!=null){
+                    objectNode.put(category, propertiesNode.get(category).asText());
+                }
+                return input;
+            };
+            pipeNewNode.addFilter(filterCategory);
+
+            Filter<List<Object>>filterCategoryValue = input -> {
+                JsonNode featureNode = (JsonNode) input.get(0);
+                JsonNode propertiesNode = featureNode.get("properties");
+                ObjectNode objectNode = (ObjectNode) input.get(1);
+                propertiesNode.fieldNames().forEachRemaining(key->{
+                    if (propertiesNode.get(key).asText().equals(category)){
+                        objectNode.put(key,category);
+                    }
+                });
+                return input;
+            };
+            pipeNewNode.addFilter(filterCategoryValue);
+        }
+
         Iterator<JsonNode> iterator = featuresNode.elements();
         while (iterator.hasNext()){
             JsonNode featureNode = iterator.next();
             JsonNode propertiesNode = featureNode.get("properties");
             if (propertiesNode.get("name")==null)continue;
             for (Map.Entry<String, List<String>> entry:mapTagsAndValues.entrySet()){
-                Pipe<ObjectNode>pipeNewNode=new Pipe<>();
                 if(propertiesNode.get(entry.getKey())!=null && entry.getValue().isEmpty() ||
                         propertiesNode.get(entry.getKey())!=null && entry.getValue().contains(propertiesNode.get(entry.getKey()).asText())){
                     ObjectNode newNode=resultJsonArray.addObject();
-
-                    Filter<ObjectNode>filterId = input -> {
-                        input.put("id", propertiesNode.get("@id").asText().split("/")[1]);
-                        return input;
-                    };
-                    pipeNewNode.addFilter(filterId);
-
-                    Filter<ObjectNode>filterName = input -> {
-                        input.put("name", propertiesNode.get("name").asText());
-                        return input;
-                    };
-                    pipeNewNode.addFilter(filterName);
-
-                    for( String attribute : attributes) {
-                        Filter<ObjectNode> f = input -> {
-                            if(propertiesNode.get(attribute)!=null)
-                                input.put(attribute, propertiesNode.get(attribute).asText());
-                            return input;
-                        };
-                        pipeNewNode.addFilter(f);
-                    }
-
-                    Filter<ObjectNode>filterLongLat = input -> {
-                        JsonNode coordinates = featureNode.at("/geometry/coordinates");
-                        while(coordinates != null) {
-                            if(coordinates.get(0).get(0) == null) break;
-                            coordinates = coordinates.get(0);
-                        }
-                        String longitude = coordinates.get(0).asText();
-                        String latitude = coordinates.get(1).asText();
-                        input.put("latitude", latitude);
-                        input.put("longitude", longitude);
-                        return input;
-                    };
-                    pipeNewNode.addFilter(filterLongLat);
-
-
-                    for (String category:categories){
-                        Filter<ObjectNode>filterCategory = input -> {
-                            if(propertiesNode.get(category)!=null){
-                                input.put(category, propertiesNode.get(category).asText());
-                            }
-                            return input;
-                        };
-                        pipeNewNode.addFilter(filterCategory);
-                        Filter<ObjectNode>filterCategoryValue = input -> {
-                            propertiesNode.fieldNames().forEachRemaining(key->{
-                                if (propertiesNode.get(key).asText().equals(category)){
-                                    input.put(key,category);
-                                }
-                            });
-                            return input;
-                        };
-                        pipeNewNode.addFilter(filterCategoryValue);
-                    }
-
-                    pipeNewNode.runFilters(newNode);
-
+                    List<Object>list=new ArrayList<>();
+                    list.add(featureNode);
+                    list.add(newNode);
+                    pipeNewNode.runFilters(list);
                 }
             }
-
         }
         try {
             File outputFile = new File("PipeAndFilter\\src\\main\\resources\\output.json");
@@ -127,15 +116,6 @@ public class Main {
 //
 //        System.out.println(resultJsonArray.toPrettyString());
 //        System.out.println(counter);
-    }
-    private static List<String> getAttributeList() {
-        List<String> list = new ArrayList<>();
-        list.add("name:en");
-        list.add("addr:city");
-        list.add("addr:city:en");
-        list.add("phone");
-        list.add("opening_hours");
-        return list;
     }
     private static Map<String, List<String>> getTagsAndValuesMap() {
         Map<String, List<String>> map = new HashMap<>();
