@@ -13,6 +13,6 @@
 **Authors**:
 - Filip Samardzhiski (211097)
 - Tamara Stojanova (211079)
-- Martin Patchev (211524)
 - Viktor Vasilev (211504)
+- Martin Patchev (211524)
 - Blagoja Ovezoski (211521)
