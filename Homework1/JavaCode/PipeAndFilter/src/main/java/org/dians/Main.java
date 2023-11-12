@@ -62,12 +62,14 @@ public class Main {
         Filter<List<Object>>filterForBasicAttributes=new FilterForBasicAttributes();
         Filter<List<Object>>filterForCoordinates=new FilterForCoordinates();
         Filter<List<Object>>filterIncludingInOutput=new FilterForIncludingInOutput();
+        Filter<List<Object>>filterForCategories=new FilterForCategories();
 
         Pipe<List<Object>>pipeNewNode=new Pipe<>();
         pipeNewNode.addFilter(filterIncludingInOutput);
         pipeNewNode.addFilter(filterForBasicAttributes);
-        CategoryFilters.process(pipeNewNode);
+        pipeNewNode.addFilter(filterForCategories);
         pipeNewNode.addFilter(filterForCoordinates);
+
         return pipeNewNode;
     }
 
