@@ -8,6 +8,7 @@ import java.util.List;
 public class FilterForCoordinates implements Filter<List<Object>> {
     @Override
     public List<Object> execute(List<Object> input) throws ElementNotFoundException {
+        if (input==null)return null;
         JsonNode featureNode = (JsonNode) input.get(0);
         ObjectNode objectNode = (ObjectNode) input.get(1);
         JsonNode coordinates = featureNode.at("/geometry/coordinates");

@@ -16,7 +16,7 @@ public class Main {
     public static ObjectMapper objectMapper= new ObjectMapper();
     public static ObjectNode objectNode= JsonNodeFactory.instance.objectNode();
     public static ArrayNode resultJsonArray = objectNode.putArray("ListJson");
-
+    public static Pipe<List<Object>> pipeNewNode = addPipeAndFilters();
     public static void main(String[] args) throws IOException, ElementNotFoundException {
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         JsonNode jsonNode = objectMapper.readTree(jsonFile);
@@ -37,27 +37,16 @@ public class Main {
             return;
         }
 
-        Pipe<List<Object>> pipeNewNode = addPipeAndFilters();
-
         int countOfObjects=0;
         Iterator<JsonNode> iterator = featuresNode.elements();
         while (iterator.hasNext()){
             JsonNode featureNode = iterator.next();
-            JsonNode propertiesNode = featureNode.get("properties");
             ObjectNode newNode=null;
-            if (propertiesNode.get("name") == null || propertiesNode.get("name").asText().toLowerCase().contains("гробишта")) continue;
-            for (Map.Entry<String, List<String>> entry:mapTagsAndValues.entrySet()){
-                if(propertiesNode.get(entry.getKey())!=null && entry.getValue().isEmpty() ||
-                        propertiesNode.get(entry.getKey())!=null && entry.getValue().contains(propertiesNode.get(entry.getKey()).asText())){
-                    if (newNode==null)
-                        newNode=resultJsonArray.addObject();
-                    List<Object>list=new ArrayList<>();
-                    list.add(featureNode);
-                    list.add(newNode);
-                    pipeNewNode.runFilters(list);
-                }
-            }
-            if (newNode!=null)
+            List<Object>list=new ArrayList<>();
+            list.add(featureNode);
+            list.add(newNode);
+            list=pipeNewNode.runFilters(list);
+            if (list!=null)
                 countOfObjects++;
         }
         try {
@@ -67,29 +56,18 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //TODO save to database
     }
 
     private static Pipe<List<Object>> addPipeAndFilters() {
-        Filter<List<Object>>filterForId=new FilterForId();
-        Filter<List<Object>>filterForName=new FilterForName();
-        Filter<List<Object>>filterForNameEn=new FilterForNameEn();
+        Filter<List<Object>>filterForBasicAttributes=new FilterForBasicAttributes();
         Filter<List<Object>>filterForCoordinates=new FilterForCoordinates();
-        Filter<List<Object>>filterForCity=new FilterForCity();
-        Filter<List<Object>>filterForCityEn=new FilterForCityEn();
-        Filter<List<Object>>filterForPhone=new FilterForPhone();
-        Filter<List<Object>>filterForOpeningHours=new FilterForOpeningHours();
+        Filter<List<Object>>filterIncludingInOutput=new FilterForIncludingInOutput();
 
         Pipe<List<Object>>pipeNewNode=new Pipe<>();
-        pipeNewNode.addFilter(filterForId);
-        pipeNewNode.addFilter(filterForName);
-        pipeNewNode.addFilter(filterForNameEn);
-        pipeNewNode.addFilter(filterForCoordinates);
-        pipeNewNode.addFilter(filterForCity);
-        pipeNewNode.addFilter(filterForCityEn);
-        pipeNewNode.addFilter(filterForPhone);
-        pipeNewNode.addFilter(filterForOpeningHours);
+        pipeNewNode.addFilter(filterIncludingInOutput);
+        pipeNewNode.addFilter(filterForBasicAttributes);
         CategoryFilters.process(pipeNewNode);
+        pipeNewNode.addFilter(filterForCoordinates);
         return pipeNewNode;
     }
 
