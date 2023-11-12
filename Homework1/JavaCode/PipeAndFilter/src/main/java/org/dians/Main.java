@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    public static ArrayList<String>categories = (ArrayList<String>) getCategoryList();
     public static Map<String, List<String>> mapTagsAndValues = getTagsAndValuesMap();
     public static File jsonFile=new File("PipeAndFilter\\src\\main\\resources\\exported_data.json");
     public static ObjectMapper objectMapper= new ObjectMapper();
@@ -38,50 +37,7 @@ public class Main {
             return;
         }
 
-        Filter<List<Object>>filterForId=new FilterForId();
-        Filter<List<Object>>filterForName=new FilterForName();
-        Filter<List<Object>>filterForNameEn=new FilterForNameEn();
-        Filter<List<Object>>filterForCoordinates=new FilterForCoordinates();
-        Filter<List<Object>>filterForCity=new FilterForCity();
-        Filter<List<Object>>filterForCityEn=new FilterForCityEn();
-        Filter<List<Object>>filterForPhone=new FilterForPhone();
-        Filter<List<Object>>filterForOpeningHours=new FilterForOpeningHours();
-
-        Pipe<List<Object>>pipeNewNode=new Pipe<>();
-        pipeNewNode.addFilter(filterForId);
-        pipeNewNode.addFilter(filterForName);
-        pipeNewNode.addFilter(filterForNameEn);
-        pipeNewNode.addFilter(filterForCoordinates);
-        pipeNewNode.addFilter(filterForCity);
-        pipeNewNode.addFilter(filterForCityEn);
-        pipeNewNode.addFilter(filterForPhone);
-        pipeNewNode.addFilter(filterForOpeningHours);
-
-        for (String category:categories){
-            Filter<List<Object>>filterCategory = input -> {
-                JsonNode featureNode = (JsonNode) input.get(0);
-                JsonNode propertiesNode = featureNode.get("properties");
-                ObjectNode objectNode = (ObjectNode) input.get(1);
-                if(propertiesNode.get(category)!=null){
-                    objectNode.put(category, propertiesNode.get(category).asText());
-                }
-                return input;
-            };
-            pipeNewNode.addFilter(filterCategory);
-
-            Filter<List<Object>>filterCategoryValue = input -> {
-                JsonNode featureNode = (JsonNode) input.get(0);
-                JsonNode propertiesNode = featureNode.get("properties");
-                ObjectNode objectNode = (ObjectNode) input.get(1);
-                propertiesNode.fieldNames().forEachRemaining(key->{
-                    if (propertiesNode.get(key).asText().equals(category)){
-                        objectNode.put(key,category);
-                    }
-                });
-                return input;
-            };
-            pipeNewNode.addFilter(filterCategoryValue);
-        }
+        Pipe<List<Object>> pipeNewNode = addPipeAndFilters();
 
         Iterator<JsonNode> iterator = featuresNode.elements();
         while (iterator.hasNext()){
@@ -119,6 +75,30 @@ public class Main {
 //        System.out.println(resultJsonArray.toPrettyString());
 //        System.out.println(counter);
     }
+
+    private static Pipe<List<Object>> addPipeAndFilters() {
+        Filter<List<Object>>filterForId=new FilterForId();
+        Filter<List<Object>>filterForName=new FilterForName();
+        Filter<List<Object>>filterForNameEn=new FilterForNameEn();
+        Filter<List<Object>>filterForCoordinates=new FilterForCoordinates();
+        Filter<List<Object>>filterForCity=new FilterForCity();
+        Filter<List<Object>>filterForCityEn=new FilterForCityEn();
+        Filter<List<Object>>filterForPhone=new FilterForPhone();
+        Filter<List<Object>>filterForOpeningHours=new FilterForOpeningHours();
+
+        Pipe<List<Object>>pipeNewNode=new Pipe<>();
+        pipeNewNode.addFilter(filterForId);
+        pipeNewNode.addFilter(filterForName);
+        pipeNewNode.addFilter(filterForNameEn);
+        pipeNewNode.addFilter(filterForCoordinates);
+        pipeNewNode.addFilter(filterForCity);
+        pipeNewNode.addFilter(filterForCityEn);
+        pipeNewNode.addFilter(filterForPhone);
+        pipeNewNode.addFilter(filterForOpeningHours);
+        CategoryFilters.process(pipeNewNode);
+        return pipeNewNode;
+    }
+
     private static Map<String, List<String>> getTagsAndValuesMap() {
         Map<String, List<String>> map = new HashMap<>();
         map.put("historic", new ArrayList<>());
@@ -155,7 +135,7 @@ public class Main {
         map.get("religion").add("christian");
         return map;
     }
-    private static List<String> getCategoryList() {
+    public static List<String> getCategoryList() {
         List<String> list = new ArrayList<>();
         list.add("historic");
         list.add("heritage");
