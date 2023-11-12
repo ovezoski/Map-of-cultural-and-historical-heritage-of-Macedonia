@@ -39,12 +39,13 @@ public class Main {
 
         Pipe<List<Object>> pipeNewNode = addPipeAndFilters();
 
+        int countOfObjects=0;
         Iterator<JsonNode> iterator = featuresNode.elements();
         while (iterator.hasNext()){
             JsonNode featureNode = iterator.next();
             JsonNode propertiesNode = featureNode.get("properties");
             ObjectNode newNode=null;
-            if (propertiesNode.get("name") == null) continue;
+            if (propertiesNode.get("name") == null || propertiesNode.get("name").asText().toLowerCase().contains("гробишта")) continue;
             for (Map.Entry<String, List<String>> entry:mapTagsAndValues.entrySet()){
                 if(propertiesNode.get(entry.getKey())!=null && entry.getValue().isEmpty() ||
                         propertiesNode.get(entry.getKey())!=null && entry.getValue().contains(propertiesNode.get(entry.getKey()).asText())){
@@ -56,24 +57,17 @@ public class Main {
                     pipeNewNode.runFilters(list);
                 }
             }
+            if (newNode!=null)
+                countOfObjects++;
         }
         try {
             File outputFile = new File("PipeAndFilter\\src\\main\\resources\\output.json");
             objectMapper.writeValue(outputFile, resultJsonArray);
-            System.out.println("ArrayNode written to " + outputFile.getAbsolutePath());
+            System.out.println("New .json file with " + countOfObjects + " objects written to "+ outputFile.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }
         //TODO save to database
-//        int counter=0;
-//        Iterator<JsonNode>it2=resultJsonArray.iterator();
-//        while (it2.hasNext()){
-//           it2.next();
-//            counter++;
-//        }
-//
-//        System.out.println(resultJsonArray.toPrettyString());
-//        System.out.println(counter);
     }
 
     private static Pipe<List<Object>> addPipeAndFilters() {

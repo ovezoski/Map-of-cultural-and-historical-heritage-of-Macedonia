@@ -53,20 +53,6 @@
   "longitude" : "21.6762",
   "religion" : "christian"
 }, {
-  "id" : "11198527",
-  "name" : "Нови градски гробишта",
-  "name:en" : "New city cemetery",
-  "latitude" : "41.3704283",
-  "longitude" : "21.5081955",
-  "religion" : "christian"
-}, {
-  "id" : "11763985",
-  "name" : "Стари гробишта",
-  "name:en" : "Old cemetery",
-  "latitude" : "41.3358211",
-  "longitude" : "21.5588856",
-  "religion" : "christian"
-}, {
   "id" : "12327159",
   "name" : "Калиманци",
   "name:en" : "Kalimanci",
@@ -119,13 +105,6 @@
   "building" : "church",
   "amenity" : "place_of_worship",
   "religion" : "christian"
-}, {
-  "id" : "32885596",
-  "name" : "Француски гробишта",
-  "name:en" : "French Cemetery",
-  "latitude" : "42.0083586",
-  "longitude" : "21.4304695",
-  "historic" : "monument"
 }, {
   "id" : "32887087",
   "name" : "Музеј на современата уметност",
@@ -229,13 +208,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "37910532",
-  "name" : "Градски гробишта",
-  "name:en" : "City Cemetery",
-  "latitude" : "41.9120615",
-  "longitude" : "22.4148709",
-  "religion" : "christian"
-}, {
   "id" : "37956139",
   "name" : "Хераклеа Линкестис",
   "name:en" : "Heraclea Lyncestis",
@@ -296,13 +268,6 @@
   "name" : "Stari gradski grobishta Kriva Palanka",
   "latitude" : "42.2000009",
   "longitude" : "22.335781",
-  "religion" : "christian"
-}, {
-  "id" : "41753625",
-  "name" : "Христијански гробишта",
-  "name:en" : "Christian cemetery",
-  "latitude" : "41.971648",
-  "longitude" : "22.7607607",
   "religion" : "christian"
 }, {
   "id" : "44026574",
@@ -454,13 +419,6 @@
   "name" : "Evangelic-Methodist Church",
   "latitude" : "41.3811052",
   "longitude" : "22.8120917",
-  "religion" : "christian"
-}, {
-  "id" : "169348417",
-  "name" : "Буковски Гробишта",
-  "name:en" : "Cemetery of Bukovo",
-  "latitude" : "41.0139814",
-  "longitude" : "21.341489",
   "religion" : "christian"
 }, {
   "id" : "171384374",
@@ -1754,12 +1712,6 @@
   "longitude" : "20.9620959",
   "religion" : "christian"
 }, {
-  "id" : "299666246",
-  "name" : "Православни гробишта во Радиовце",
-  "latitude" : "41.9053617",
-  "longitude" : "20.9621593",
-  "religion" : "christian"
-}, {
   "id" : "299667131",
   "name" : "Џамија во Радиовце",
   "latitude" : "41.9076687",
@@ -1795,12 +1747,6 @@
   "addr:city" : "Tenovo",
   "amenity" : "place_of_worship"
 }, {
-  "id" : "299896013",
-  "name" : "Христијански гробишта во Теново",
-  "latitude" : "41.89382",
-  "longitude" : "20.9864781",
-  "religion" : "christian"
-}, {
   "id" : "305388566",
   "name" : "Алипашина џамија",
   "name:en" : "Ali Pasha Mosque",
@@ -1814,12 +1760,6 @@
   "longitude" : "20.7972324",
   "building" : "church",
   "amenity" : "place_of_worship",
-  "religion" : "christian"
-}, {
-  "id" : "307186396",
-  "name" : "Гробишта Зајчев Рид",
-  "latitude" : "42.0170087",
-  "longitude" : "21.3932248",
   "religion" : "christian"
 }, {
   "id" : "326502247",
@@ -2119,20 +2059,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "365480224",
-  "name" : "Гробишта",
-  "name:en" : "Christian cemetery",
-  "latitude" : "41.9647831",
-  "longitude" : "22.804199",
-  "religion" : "christian"
-}, {
-  "id" : "365529801",
-  "name" : "Христијански гробишта",
-  "name:en" : "Christian cemetery",
-  "latitude" : "41.9708075",
-  "longitude" : "22.759294",
-  "religion" : "christian"
-}, {
   "id" : "365667200",
   "name" : "Св. Јован Крстител",
   "name:en" : "Sv. Jovan Krstitel",
@@ -2140,13 +2066,6 @@
   "longitude" : "22.8075895",
   "addr:city" : "Ѕвегор",
   "amenity" : "place_of_worship",
-  "religion" : "christian"
-}, {
-  "id" : "365756890",
-  "name" : "Христијански гробишта",
-  "name:en" : "Christian cemetery",
-  "latitude" : "41.9721201",
-  "longitude" : "22.7581274",
   "religion" : "christian"
 }, {
   "id" : "366449705",
@@ -2381,12 +2300,6 @@
   "longitude" : "21.5385808",
   "historic" : "archaeological_site"
 }, {
-  "id" : "416941292",
-  "name" : "Градски гробишта",
-  "latitude" : "41.728772",
-  "longitude" : "22.1726258",
-  "religion" : "christian"
-}, {
   "id" : "416992718",
   "name" : "Св. Димитриј",
   "latitude" : "41.734396",
@@ -2449,18 +2362,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "428710263",
-  "name" : "Православни гробишта Моноспитово",
-  "latitude" : "41.41728",
-  "longitude" : "22.7513141",
-  "religion" : "christian"
-}, {
-  "id" : "428710680",
-  "name" : "Протестантски гробишта Моноспитово",
-  "latitude" : "41.4165013",
-  "longitude" : "22.7477028",
-  "religion" : "christian"
-}, {
   "id" : "428710862",
   "name" : "Протестантска црква",
   "latitude" : "41.4165598",
@@ -2498,13 +2399,6 @@
   "latitude" : "41.2598752",
   "longitude" : "21.5665078",
   "tourism" : "attraction"
-}, {
-  "id" : "432996399",
-  "name" : "Нови православни гробишта",
-  "name:en" : "New orthodox cemetery",
-  "latitude" : "41.047999",
-  "longitude" : "21.3586464",
-  "religion" : "christian"
 }, {
   "id" : "433012845",
   "name" : "Св. Димитриј Солунски",
@@ -2889,12 +2783,6 @@
   "longitude" : "20.795401",
   "building" : "church",
   "amenity" : "place_of_worship",
-  "religion" : "christian"
-}, {
-  "id" : "520980308",
-  "name" : "Гробишта Лисиче",
-  "latitude" : "41.9655878",
-  "longitude" : "21.4884114",
   "religion" : "christian"
 }, {
   "id" : "533569466",
@@ -3454,13 +3342,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "808427323",
-  "name" : "Христијански Гробишта",
-  "name:en" : "Christian Graveyard",
-  "latitude" : "41.4842483",
-  "longitude" : "20.9234817",
-  "religion" : "christian"
-}, {
   "id" : "808916278",
   "name" : "Масакр кај Карпалак",
   "name:en" : "Karpalak massacre",
@@ -3566,13 +3447,6 @@
   "latitude" : "41.4827921",
   "longitude" : "20.8673838",
   "amenity" : "place_of_worship",
-  "denomination" : "macedonian_orthodox",
-  "religion" : "christian"
-}, {
-  "id" : "819050102",
-  "name" : "Православни Гробишта",
-  "latitude" : "41.4977326",
-  "longitude" : "20.9442708",
   "denomination" : "macedonian_orthodox",
   "religion" : "christian"
 }, {
@@ -3968,13 +3842,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "853113056",
-  "name" : "Селски гробишта - Усје",
-  "name:en" : "Usje Village Graveyard",
-  "latitude" : "41.9559708",
-  "longitude" : "21.456103",
-  "religion" : "christian"
-}, {
   "id" : "853541376",
   "name" : "Св. Димитриј Солунски",
   "name:en" : "St. Demetrius of Salonica",
@@ -4311,14 +4178,6 @@
   "longitude" : "22.037015",
   "amenity" : "place_of_worship",
   "denomination" : "macedonian_orthodox",
-  "religion" : "christian"
-}, {
-  "id" : "886760580",
-  "name" : "Влашки гробишта",
-  "name:en" : "Aromanian Cemetery",
-  "latitude" : "41.3660094",
-  "longitude" : "21.2546604",
-  "addr:city" : "Крушево",
   "religion" : "christian"
 }, {
   "id" : "888421002",
@@ -5196,12 +5055,6 @@
   "amenity" : "place_of_worship",
   "religion" : "christian"
 }, {
-  "id" : "943309802",
-  "name" : "Атински воени гробишта",
-  "latitude" : "41.3175985",
-  "longitude" : "22.5852534",
-  "religion" : "christian"
-}, {
   "id" : "953826670",
   "name" : "Свети Климент",
   "latitude" : "41.1126207",
@@ -6028,13 +5881,6 @@
   "latitude" : "41.3590079",
   "longitude" : "21.53295",
   "historic" : "archaeological_site"
-}, {
-  "id" : "1126557482",
-  "name" : "Стари варошки гробишта",
-  "name:en" : "Old cemetery of Varosh",
-  "latitude" : "41.3593361",
-  "longitude" : "21.5280063",
-  "religion" : "christian"
 }, {
   "id" : "1127758201",
   "name" : "Битолска Тврдина",
