@@ -1,0 +1,44 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+small {
+  font-size: 12px;
+}
+
+.clouds img,
+.clouds {
+  position: fixed;
+  z-index: -1;
+}
+
+.cloud1 {
+  left: 50%;
+  top: 10%;
+}
+
+.cloud2 {
+  right: 10%;
+  top: 30%;
+}
+
+.cloud3 {
+  right: 50%;
+  bottom: 20%;
+}
+
+.cloud4 {
+  left: 10%;
+  top: 50%;
+}
+
+.cloud5 {
+  left: 10%;
+  top: 10%;
+}
