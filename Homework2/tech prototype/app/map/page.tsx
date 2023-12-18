@@ -1,5 +1,9 @@
+"use client"
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import LeafletMap from "../ui/map/leafletMap";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../layout";
+import axios from "axios";
 
 function ResultCard({
   title,
@@ -31,6 +35,24 @@ function ResultCard({
 }
 
 export default function Map() {
+  const { authToken, setAuthToken } = useContext(AuthContext) as AuthContext;
+  const [mapLocations, setMapLocations] = useState<MapLocation[]>([]);
+
+  const fetchMapLocations = () => {
+    const res = axios.get("http://localhost:8080/user/mapLocations", {
+      headers: { Authorization: `Bearer ${authToken}` }
+    })
+    .then((res) => {
+      setMapLocations(res.data);
+    })
+    .catch((e) => { })
+  }
+
+  useEffect(() => {
+    fetchMapLocations();
+    
+  }, []);
+
   return (
     <div className="py-20 p-1 flex-none lg:flex min-h-screen">
       <div className=" w-full lg:w-1/3 p-1">
@@ -52,22 +74,13 @@ export default function Map() {
           </div>
         </div>
 
-        <ResultCard
-          title="Куршумли-Ан"
-          badges={["Музеј", "Центар за уметност"]}
-          distance={4}
-        />
-
-        <ResultCard
-          distance={2}
-          title="Скопско Кале"
-          badges={["Замок", "Атракција"]}
-        />
-        <ResultCard
-          distance={15}
-          title="Аквадукт Скопје"
-          badges={["Аквадукт", "Атракција"]}
-        />
+        <div style={{height: "75vh", overflow: "scroll", overflowX: "hidden"}}>
+            {mapLocations.map((m) => (
+              <div key={mapLocations.indexOf(m)}>
+                <ResultCard title={m.name} badges={["abc", "aASD"]} distance={12} />
+              </div>
+            ))}
+          </div>
       </div>
       <div className="w-full lg:w-2/3">
         <LeafletMap />

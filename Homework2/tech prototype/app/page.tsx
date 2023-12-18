@@ -1,6 +1,10 @@
+"use client"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-3 pt-24 w-full">
       <div className="flex flex-col lg:flex-row w-2/3 xl:w-2/3  justify-between align-center">
@@ -14,7 +18,7 @@ export default function Home() {
           </div>
 
           <div>
-            <button className="bg-emerald-300 p-2 my-5 rounded-lg text-white">
+            <button className="bg-emerald-300 p-2 my-5 rounded-lg text-white" onClick={() => router.push("/map")}>
               Start Now
             </button>
           </div>
