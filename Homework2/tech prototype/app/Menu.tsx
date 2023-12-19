@@ -1,11 +1,22 @@
 "use client";
 
+import { AuthContext } from "@/app/layout";
+import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useContext } from "react";
 
-export default function Menu() {
+export default function Menu({ router }: { router: AppRouterInstance }) {
   const pathname = usePathname();
+
+  const { authToken, setAuthToken } = useContext(AuthContext) as AuthContext;
+
+  function logout() {
+    sessionStorage.setItem("authToken", "");
+    setAuthToken("");
+    router.push("/");
+  }
 
   const navigationItems = [
     { title: "Home", href: "/" },
@@ -16,7 +27,7 @@ export default function Menu() {
     <nav className="fixed w-full p-3 drop-shadow-md bg-slate-50 flex justify-between">
       <div className="flex">
         <div className="flex justify-center items-center">
-          <Image src="/logo.png" width={30} height={30} alt="logo" />
+          <Image src="/logo.png" width={30} height={31} alt="logo" />
         </div>
         <div className="text-lg px-2 hidden lg:block">ByteVenture</div>
       </div>
@@ -24,15 +35,20 @@ export default function Menu() {
         {navigationItems.map((item) => (
           <div
             className={
-              pathname === item.href
-                ? "px-2 mx-2 bg-emerald-300 rounded p-1 text-white"
-                : "px-2 mx-2 rounded p-1"
+              "px-2 mx-2 p-1 rounded" +
+              (pathname === item.href ? " bg-emerald-300  text-white" : "")
             }
             key={item.title}
           >
             <Link href={item.href}>{item.title}</Link>
           </div>
         ))}
+
+        {authToken && (
+          <button onClick={logout} className={"px-2 mx-2 p-1 rounded"}>
+            Logout
+          </button>
+        )}
       </div>
     </nav>
   );

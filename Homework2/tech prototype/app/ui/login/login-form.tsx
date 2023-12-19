@@ -10,29 +10,32 @@ import { AuthContext } from "@/app/layout";
 import axios from "axios";
 
 export default function LoginForm() {
-  const router =  useRouter();
+  const router = useRouter();
   const [usernameValue, setUsernameValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
-  const {authToken, setAuthToken} = useContext(AuthContext) as AuthContext;
+  const { setAuthToken } = useContext(AuthContext) as AuthContext;
 
   const handleLogin = async () => {
     const res = await axios.post("http://localhost:8080/auth/login", {
-        username: `${usernameValue}`,
-        password: `${passwordValue}`
-    })
-    .catch((e) => {})
+      username: `${usernameValue}`,
+      password: `${passwordValue}`,
+    });
 
     if (res == undefined || res.status != 200) {
-        return;
+      return;
     }
 
-    
     setAuthToken(res.data.jwt);
+    localStorage.setItem("authToken", res.data.jwt);
+
     router.push("/");
-}
+  };
 
   return (
-    <div className="w-full lg:w-1/2  bg-gray-50 py-10 p-3 lg:p-10">
+    <form
+      onSubmit={(e) => e.preventDefault()}
+      className="w-full lg:w-1/2  bg-gray-50 py-10 p-3 lg:p-10"
+    >
       <div className="flex flex-col lg:flex-row justify-between items-center gap-5">
         <div className="block lg:hidden align-center">
           <Image
@@ -47,24 +50,24 @@ export default function LoginForm() {
           <div className="text-2xl p-2 text-center">Welcome back!</div>
           <div className="p-2"> We are so excited to see you again! </div>
 
-        <div className="mb-2">
-          <input
-            className="border rounded p-1 w-full"
-            value={usernameValue}
-            onChange={(e) => setUsernameValue(e.target.value)}
-          />
-        </div>
+          <div className="mb-2">
+            <input
+              className="border rounded p-1 w-full"
+              value={usernameValue}
+              onChange={(e) => setUsernameValue(e.target.value)}
+            />
+          </div>
 
-        <div>
-          <input
-            type="password"
-            className="border rounded p-1 w-full"
-            value={passwordValue}
-            onChange={(e) => setPasswordValue(e.target.value)}
-          />
-        </div>
+          <div>
+            <input
+              type="password"
+              className="border rounded p-1 w-full"
+              value={passwordValue}
+              onChange={(e) => setPasswordValue(e.target.value)}
+            />
+          </div>
 
-        <small className="text-emerald-400">Forgot your password?</small>
+          <small className="text-emerald-400">Forgot your password?</small>
 
           <div>
             <Button title="Login" onClickFunc={handleLogin} />
@@ -80,6 +83,6 @@ export default function LoginForm() {
           />
         </div>
       </div>
-    </div>
+    </form>
   );
 }

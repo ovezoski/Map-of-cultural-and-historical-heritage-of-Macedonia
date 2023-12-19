@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import { Inter } from "next/font/google";
+import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import Footer from "./ui/footer/footer";
-import Menu from "./ui/menu/menu";
 import { createContext, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import axios from 'axios';
+import Menu from "./Menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,36 +16,38 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [authToken, setAuthToken] = useState("");
+  const [authToken, setAuthToken] = useState<string | undefined>(undefined);
+
   const router = useRouter();
+
   const pathname = usePathname();
 
-  const fetchAuth = async () => {
-    if (pathname == "/login") return;
-    const res = await axios.get("http://localhost:8080/user/", {
-       headers: {Authorization: `Bearer ${authToken}`}
-    })
-    .catch((e) => {
-      router.push("/login");
-    })
-  }
+  useEffect(() => {
+    const authTokenStorage = localStorage.getItem("authToken");
+
+    if (authTokenStorage) {
+      setAuthToken(authTokenStorage);
+    } else {
+      setAuthToken("");
+    }
+  }, []);
 
   useEffect(() => {
-    fetchAuth();
-  })
+    if (authToken === "" && pathname !== "login") {
+      router.push("/login");
+    }
+  }, [authToken, pathname, router]);
 
   return (
-    <>
+    <AuthContext.Provider value={{ authToken, setAuthToken }}>
       <html lang="en">
         <head></head>
         <body className={inter.className}>
-          <AuthContext.Provider value={{authToken, setAuthToken}}>
-            <Menu />
-              {children}
-            <Footer />
-          </AuthContext.Provider>
+          <Menu router={router} />
+          {authToken === undefined ? <>Loading...</> : children}
+          <Footer />
         </body>
       </html>
-    </>
+    </AuthContext.Provider>
   );
 }

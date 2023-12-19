@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -18,9 +19,11 @@ export default function Home() {
           </div>
 
           <div>
-            <button className="bg-emerald-300 p-2 my-5 rounded-lg text-white" onClick={() => router.push("/map")}>
-              Start Now
-            </button>
+            <Link href="/map">
+              <button className="bg-emerald-300 p-2 my-5 rounded-lg text-white">
+                Start Now
+              </button>
+            </Link>
           </div>
         </div>
         <Image src="/home-map.png" alt="Map" width={355} height={326} />

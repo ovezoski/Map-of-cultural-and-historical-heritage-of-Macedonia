@@ -45,7 +45,7 @@ public class BackendMainApplication {
 
 			ObjectMapper mapper = new ObjectMapper();
 			TypeReference<List<MapLocation>> typeReference = new TypeReference<List<MapLocation>>() {};
-			InputStream inputStream = new FileInputStream(new File("..\\PipeAndFilter\\src\\main\\resources\\output.json"));
+			InputStream inputStream = getClass().getClassLoader().getResourceAsStream("json/output.json");
 					//getResourceAsStream("/json/output.json");
 			try {
 				List<MapLocation> mapLocations = mapper.readValue(inputStream, typeReference);

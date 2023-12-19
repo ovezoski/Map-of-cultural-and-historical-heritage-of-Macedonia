@@ -1,4 +1,4 @@
 interface AuthContext {
-    authToken: string;
-    setAuthToken: (token: string) => void;
+  authToken: string | undefined;
+  setAuthToken: (token: string) => void;
 }
