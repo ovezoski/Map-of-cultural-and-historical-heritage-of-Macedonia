@@ -1,9 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useFormState } from "react-dom";
-import Button from "../components/Button";
-import TextInput from "../components/TextInput";
+import Button from "../ui/components/Button";
 import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import { AuthContext } from "@/app/layout";

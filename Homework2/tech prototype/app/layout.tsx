@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
-import Footer from "./ui/footer/footer";
+import Footer from "./Footer";
 import { createContext, useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Menu from "./Menu";
@@ -36,7 +36,9 @@ export default function RootLayout({
   }, [authToken, router]);
 
   useEffect(() => {
-    fetchAuth();
+    if (authToken !== "" && authToken !== undefined) {
+      fetchAuth();
+    }
   }, [authToken, fetchAuth]);
 
   useEffect(() => {
