@@ -1,13 +1,27 @@
 import { LatLngExpression } from "leaflet";
 import ResultCard from "./ResultCard";
 import { calculateDistance, capitalizeAndReplace } from "./map.functions";
+import { cities } from "./cities";
+import { categories } from "./categories";
 
 export default function LocationsList({
   mapLocations,
   userLocation,
+  city,
+  setCity,
+  category,
+  setCategory,
+  name,
+  setName,
 }: {
   mapLocations: MapLocation[] | undefined;
   userLocation: LatLngExpression;
+  city: string;
+  setCity: (city: string) => void;
+  category: string;
+  setCategory: (category: string) => void;
+  name: string;
+  setName: (name: string) => void;
 }) {
   return (
     <div className=" w-full lg:w-1/3 p-1">
@@ -15,18 +29,56 @@ export default function LocationsList({
         <input
           className="rounded p-2 bg-slate-100 w-full"
           placeholder="Search..."
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />
       </div>
-      <div className="flex justify-between px-1 g-1">
-        <div className="rounded grow m-1 p-2 bg-slate-100 text-gray-500">
-          Category
+      <div className="flex">
+        <div className="p-2">
+          <select
+            className="rounded w-full p-2 bg-slate-100 text-gray-500"
+            name="category-filter"
+            id="category-filter"
+            placeholder="Category"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option>Category</option>
+
+            {categories.map((category) => {
+              const categoryString = `${category.column}=${category.category}`;
+              return (
+                <option key={categoryString} value={categoryString}>
+                  {capitalizeAndReplace(category.category)}
+                </option>
+              );
+            })}
+          </select>
         </div>
-        <div className="rounded grow m-1 p-2 bg-slate-100 text-gray-500">
-          City
+        <div className="p-2">
+          <select
+            className="rounded w-full p-2 bg-slate-100 text-gray-500"
+            name="city-filter"
+            id="city-filter"
+            placeholder="City"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+          >
+            <option>City</option>
+
+            {cities.map((city) => (
+              <option key={city} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
         </div>
-        <div className="rounded grow m-1 p-2 bg-emerald-400 text-white text-center hover:bg-emerald-300 active:bg-emerald-200 ">
-          Apply
-        </div>
+      </div>
+
+      <div className="rounded m-1 p-2 bg-emerald-400 text-white text-center hover:bg-emerald-300 active:bg-emerald-200 ">
+        Apply
       </div>
 
       <div style={{ height: "75vh", overflow: "scroll", overflowX: "hidden" }}>
