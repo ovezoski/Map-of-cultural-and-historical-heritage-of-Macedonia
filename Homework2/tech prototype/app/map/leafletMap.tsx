@@ -40,7 +40,7 @@ function LeafletMap({
         {mapLocations?.map((location) => (
           <Marker
             position={[Number(location.latitude), Number(location.longitude)]}
-            key={location.enName}
+            key={location.id}
           />
         ))}
 

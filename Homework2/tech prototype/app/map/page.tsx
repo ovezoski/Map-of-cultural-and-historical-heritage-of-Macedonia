@@ -14,8 +14,10 @@ export default function Map() {
   const { authToken } = useContext(AuthContext) as AuthContext;
 
   const [mapLocations, setMapLocations] = useState<MapLocationResponse>();
-
   const [userLocation, setUserLocation] = useState<LatLngExpression>([0, 0]);
+  const [category, setCategory] = useState("");
+  const [name, setName] = useState("");
+  const [city, setCity] = useState("");
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -37,15 +39,27 @@ export default function Map() {
 
   const fetchMapLocations = useCallback(async () => {
     try {
-      const response = await axios.get("http://localhost:8080/map-locations/", {
-        headers: { Authorization: `Bearer ${authToken}` },
+      const categoryColumn = category.split("=")[0] || "category";
+      const categoryValue = category.split("=")[1];
+
+      const queryParams = new URLSearchParams({
+        city: city,
+        name: name,
+        [categoryColumn]: categoryValue,
       });
+
+      const response = await axios.get(
+        "http://localhost:8080/map-locations/?" + queryParams.toString(),
+        {
+          headers: { Authorization: `Bearer ${authToken}` },
+        }
+      );
 
       setMapLocations(response.data);
     } catch (error) {
       console.error("Error fetching map locations:", error);
     }
-  }, [authToken]);
+  }, [authToken, category, city, name]);
 
   useEffect(() => {
     fetchMapLocations();
@@ -56,6 +70,12 @@ export default function Map() {
       <LocationsList
         mapLocations={mapLocations?.content}
         userLocation={userLocation}
+        city={city}
+        setCity={setCity}
+        category={category}
+        setCategory={setCategory}
+        name={name}
+        setName={setName}
       />
       <div className="w-full lg:w-2/3">
         <LeafletMap
