@@ -3,9 +3,10 @@ import { Inter } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import Footer from "./ui/footer/footer";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Menu from "./Menu";
+import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,22 @@ export default function RootLayout({
   const router = useRouter();
 
   const pathname = usePathname();
+
+  const fetchAuth = useCallback(() => {
+    axios
+      .get("http://localhost:8080/user/", {
+        headers: { Authorization: `Bearer ${authToken}` },
+      })
+      .catch(() => {
+        router.push("/login");
+        setAuthToken("");
+        localStorage.setItem("authToken", "");
+      });
+  }, [authToken, router]);
+
+  useEffect(() => {
+    fetchAuth();
+  }, [authToken, fetchAuth]);
 
   useEffect(() => {
     const authTokenStorage = localStorage.getItem("authToken");
