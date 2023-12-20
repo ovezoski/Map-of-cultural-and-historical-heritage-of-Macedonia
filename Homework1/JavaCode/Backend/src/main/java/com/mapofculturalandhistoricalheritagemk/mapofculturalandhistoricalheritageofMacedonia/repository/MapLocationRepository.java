@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface MapLocationRepository extends JpaRepository<MapLocation, String> {
     Page<MapLocation> findAll(Pageable pageable);
+    List<MapLocation> findMapLocationByNameStartingWithIgnoreCaseOrEnNameStartingWithIgnoreCase(String name1, String name2);
 }
