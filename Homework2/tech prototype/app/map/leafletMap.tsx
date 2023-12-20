@@ -15,31 +15,13 @@ const customIcon = L.icon({
 
 function LeafletMap({
   mapLocations,
+  userLocation,
 }: {
   mapLocations: MapLocation[] | undefined;
+  userLocation: LatLngExpression;
 }) {
   useEffect(() => {
     createContext("da");
-  }, []);
-
-  const [userLocation, setUserLocation] = useState<LatLngExpression>([0, 0]);
-
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setUserLocation([
-            position.coords.latitude,
-            position.coords.longitude,
-          ]);
-        },
-        (error) => {
-          console.error("Error getting user location:", error);
-        }
-      );
-    } else {
-      console.log("Geolocation is not supported by your browser");
-    }
   }, []);
 
   const macedoniaPosition: LatLngTuple = [41.6086, 21.7453];

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import "@/app/ui/login/login.css";
+import "@/app/login/login.css";
 
-import LoginForm from "../ui/login/login-form";
+import LoginForm from "./login-form";
 
 export default function Home() {
   return (
