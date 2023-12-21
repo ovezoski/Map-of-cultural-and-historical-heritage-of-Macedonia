@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -22,8 +23,44 @@ import java.util.stream.Collectors;
 public class MapLocationService {
     private final MapLocationRepository mapLocationRepository;
 
+    public static Double haversine(double lat1, double lon1, double lat2, double lon2) {
+        double R = 6371;  // Earth's radius in kilometers
+
+        // Convert latitude and longitude from degrees to radians
+        lat1 = Math.toRadians(lat1);
+        lon1 = Math.toRadians(lon1);
+        lat2 = Math.toRadians(lat2);
+        lon2 = Math.toRadians(lon2);
+
+        // Calculate differences
+        double dlat = lat2 - lat1;
+        double dlon = lon2 - lon1;
+
+        // Haversine formula
+        double a = Math.sin(dlat / 2) * Math.sin(dlat / 2) +
+                Math.cos(lat1) * Math.cos(lat2) *
+                        Math.sin(dlon / 2) * Math.sin(dlon / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        // Distance in kilometers
+        return R * c;
+    }
+
     public List<MapLocation> getAllLocations() {
         return mapLocationRepository.findAll();
+    }
+    public Page<MapLocation> findAll(Pageable pageable) {
+        return sort(mapLocationRepository.findAll(), pageable);
+    }
+    private Page<MapLocation> sort(List<MapLocation> list, Pageable pageable){
+        double lat1 = 41.9785144; //User location
+        double lon1 = 21.4774776;
+        Comparator<MapLocation> comparator= (o1, o2) -> Math.round(haversine(lat1, lon1, Double.parseDouble(o1.getLatitude()), Double.parseDouble(o1.getLongitude()))
+                .compareTo(haversine(lat1, lon1, Double.parseDouble(o2.getLatitude()), Double.parseDouble(o2.getLongitude()))));
+
+        list = list.stream().sorted(comparator).collect(Collectors.toList());
+        int start = (int) pageable.getOffset();
+        int end = Math.min((start + pageable.getPageSize()), list.size());
+        return new PageImpl<>(list.subList(start, end), pageable, list.size());
     }
 
     public Page<MapLocation> searchBy(String searchTerm, String category, String city, Pageable pageable) {
@@ -89,10 +126,6 @@ public class MapLocationService {
             } ).collect(Collectors.toList());
             }
 
-        int start = (int) pageable.getOffset();
-        int end = Math.min((start + pageable.getPageSize()), list.size());
-        Page<MapLocation> page = new PageImpl<>(list.subList(start, end), pageable, list.size());
-
-        return page;
+        return sort(list, pageable);
     }
 }

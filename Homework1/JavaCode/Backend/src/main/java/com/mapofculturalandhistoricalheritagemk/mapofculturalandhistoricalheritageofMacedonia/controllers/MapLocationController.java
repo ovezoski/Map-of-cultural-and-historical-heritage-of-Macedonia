@@ -23,35 +23,19 @@ public class MapLocationController {
 
     @GetMapping("/")
     public ResponseEntity<Page<MapLocation>> getEntities(
-            @RequestParam(required = false) String searchTerm,
-            @RequestParam(required = false) String category,
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String amenity, //TODO CHANGE BACK TO category
             @RequestParam(required = false) String city,
             @PageableDefault(size = 10) Pageable pageable) {
 
         Page<MapLocation> entities;
-
-        if (searchTerm != null || category != null || city != null) {
-            entities = mapLocationService.searchBy(searchTerm, category, city, pageable);
+        //TODO CHANGE TO != null IN IF STATEMENT, THIS IS TEMPORARY FIX TO WORK WITH FRONT END
+        if (name != null || !amenity.equals( "undefined") || !city.isEmpty()) {
+            entities = mapLocationService.searchBy(name, amenity, city, pageable);
         } else {
-            entities = mapLocationRepository.findAll(pageable);
+            entities = mapLocationService.findAll(pageable);
         }
 
         return ResponseEntity.ok(entities);
     }
-//    @GetMapping("/")
-//    public ResponseEntity<Page<MapLocation>> getEntities(@PageableDefault(size = 10) Pageable pageable) {
-//        Page<MapLocation> entities = mapLocationRepository.findAll(pageable);
-//        return ResponseEntity.ok(entities);
-//    }
-//
-//    @GetMapping("/")
-//    public ResponseEntity<Page<MapLocation>> getEntitiesFilter(@RequestParam String searchTerm,
-//            @RequestParam String category,
-//            @RequestParam String city,
-//            @PageableDefault(size = 10) Pageable pageable) {
-//        Page<MapLocation> entities = mapLocationService.searchBy(searchTerm, category, city, pageable);
-////                mapLocationRepository.findAll(pageable);
-//        return ResponseEntity.ok(entities);
-//    }
-
 }
