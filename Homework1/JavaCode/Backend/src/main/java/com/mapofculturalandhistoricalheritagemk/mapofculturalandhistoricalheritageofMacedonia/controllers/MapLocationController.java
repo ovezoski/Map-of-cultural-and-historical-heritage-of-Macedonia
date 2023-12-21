@@ -24,17 +24,14 @@ public class MapLocationController {
     @GetMapping("/")
     public ResponseEntity<Page<MapLocation>> getEntities(
             @RequestParam(required = false) String name,
-            @RequestParam(required = false) String amenity, //TODO CHANGE BACK TO category
+            @RequestParam(required = false) String category,
             @RequestParam(required = false) String city,
-            @PageableDefault(size = 10) Pageable pageable) {
+            @PageableDefault(size = 10) Pageable pageable
+    ) {
 
         Page<MapLocation> entities;
-        //TODO CHANGE TO != null IN IF STATEMENT, THIS IS TEMPORARY FIX TO WORK WITH FRONT END
-        if (name != null || !amenity.equals( "undefined") || !city.isEmpty()) {
-            entities = mapLocationService.searchBy(name, amenity, city, pageable);
-        } else {
-            entities = mapLocationService.findAll(pageable);
-        }
+
+        entities = mapLocationService.searchBy(name, category, city, pageable);
 
         return ResponseEntity.ok(entities);
     }

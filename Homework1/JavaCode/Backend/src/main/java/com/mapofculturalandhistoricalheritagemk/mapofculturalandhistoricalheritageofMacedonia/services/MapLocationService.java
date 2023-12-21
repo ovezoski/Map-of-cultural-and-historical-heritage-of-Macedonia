@@ -65,20 +65,20 @@ public class MapLocationService {
 
     public Page<MapLocation> searchBy(String searchTerm, String category, String city, Pageable pageable) {
         List<MapLocation> list = new ArrayList<>();
-        if(!searchTerm.equals("undefined")) {
+        if(!searchTerm.isEmpty()) {
             list.addAll(mapLocationRepository
                     .findMapLocationByNameStartingWithIgnoreCaseOrEnNameStartingWithIgnoreCase(searchTerm, searchTerm));
         }
         else {
            list = mapLocationRepository.findAll();
         }
-        if(!city.equals("undefined")) {
+        if(!city.isEmpty()) {
             list = list.stream().filter(ml -> ml.getAddrCity() != null && ml.getAddrCity().equalsIgnoreCase(city))
                     .collect(Collectors.toList());
         }
-        if(!category.equals("undefined")) {
+        if(!category.isEmpty() ) {
             list = list.stream().filter(ml -> {
-                if(category.equalsIgnoreCase("historic") && ml.getHistoric() != null) {
+                if(category.equalsIgnoreCase("historic") && ml.getHistoric() != null ) {
                     return true;
                 }
                 if(category.equalsIgnoreCase("art") && ml.getShop() != null && ml.getShop().equals("art")) {

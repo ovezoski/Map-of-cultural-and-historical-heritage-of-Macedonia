@@ -40,12 +40,12 @@ export default function Map() {
   const fetchMapLocations = useCallback(async () => {
     try {
       const categoryColumn = category.split("=")[0] || "category";
-      const categoryValue = category.split("=")[1];
+      const categoryValue = category.split("=")[1] || null;
 
       const queryParams = new URLSearchParams({
-        city: city,
-        name: name,
-        [categoryColumn]: categoryValue,
+        city: city || "",
+        name: name || "",
+        category: categoryValue || "",
       });
 
       const response = await axios.get(
