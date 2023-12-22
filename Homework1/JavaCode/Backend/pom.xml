@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.mapofculturalandhistoricalheritagemk</groupId>
 	<artifactId>map-of-cultural-and-historical-heritage-of-Macedonia</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>map-of-cultural-and-historical-heritage-of-Macedonia</name>
 	<description>Backend and business logic for map-of-cultural-and-historical-heritage-of-Macedonia</description>
 	<properties>
@@ -43,11 +43,7 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 	</dependencies>
 
 	<build>
