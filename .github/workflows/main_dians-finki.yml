@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '${{ github.workspace }}/Homework1/JavaCode/Backend/target/map-of-cultural-and-historical-heritage-of-Macedonia-0.0.1.jar'
     
   deploy:
     runs-on: ubuntu-latest
