@@ -1,11 +1,12 @@
 "use client";
 
 import LeafletMap from "./leafletMap";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import LocationsList from "./LocationsList";
 import axios from "axios";
-import { AuthContext } from "../layout";
 import { LatLngExpression } from "leaflet";
+import { AuthContext } from "../AuthContext";
+import dynamic from "next/dynamic";
 
 interface MapLocationResponse {
   content: MapLocation[];
@@ -18,6 +19,15 @@ export default function Map() {
   const [category, setCategory] = useState("");
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
+
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("./leafletMap"), {
+        loading: () => <p>The map is loading</p>,
+        ssr: false,
+      }),
+    []
+  );
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -78,10 +88,7 @@ export default function Map() {
         setName={setName}
       />
       <div className="w-full lg:w-2/3">
-        <LeafletMap
-          userLocation={userLocation}
-          mapLocations={mapLocations?.content}
-        />
+        <Map userLocation={userLocation} mapLocations={mapLocations?.content} />
       </div>
     </div>
   );

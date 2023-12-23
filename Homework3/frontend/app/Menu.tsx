@@ -1,11 +1,11 @@
 "use client";
 
-import { AuthContext } from "@/app/layout";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 
 export default function Menu({ router }: { router: AppRouterInstance }) {
   const pathname = usePathname();
@@ -13,7 +13,6 @@ export default function Menu({ router }: { router: AppRouterInstance }) {
   const { authToken, setAuthToken } = useContext(AuthContext) as AuthContext;
 
   function logout() {
-    sessionStorage.setItem("authToken", "");
     setAuthToken("");
     router.push("/");
   }

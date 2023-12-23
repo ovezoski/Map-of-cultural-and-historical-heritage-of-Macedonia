@@ -4,8 +4,8 @@ import Image from "next/image";
 import Button from "../ui/components/Button";
 import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
-import { AuthContext } from "@/app/layout";
 import axios from "axios";
+import { AuthContext } from "../AuthContext";
 
 export default function LoginForm() {
   const router = useRouter();

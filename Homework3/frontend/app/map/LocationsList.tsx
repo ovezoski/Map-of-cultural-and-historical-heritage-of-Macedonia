@@ -1,3 +1,5 @@
+"use client";
+
 import { LatLngExpression } from "leaflet";
 import ResultCard from "./ResultCard";
 import { calculateDistance, capitalizeAndReplace } from "./map.functions";
@@ -45,7 +47,7 @@ export default function LocationsList({
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option>Category</option>
+            <option value="">Category</option>
 
             {categories.map((category) => {
               const categoryString = `${category.column}=${category.category}`;
@@ -66,7 +68,7 @@ export default function LocationsList({
             value={city}
             onChange={(e) => setCity(e.target.value)}
           >
-            <option>City</option>
+            <option value="">City</option>
 
             {cities.map((city) => (
               <option key={city} value={city}>

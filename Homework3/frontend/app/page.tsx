@@ -1,11 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-3 pt-24 w-full">
       <div className="flex flex-col lg:flex-row w-2/3 xl:w-2/3  justify-between align-center">

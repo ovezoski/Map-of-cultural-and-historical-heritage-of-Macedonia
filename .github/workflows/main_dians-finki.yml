@@ -5,6 +5,8 @@ name: Build and deploy JAR app to Azure Web App - dians-finki
 
 on:
   push:
+    paths:
+      - 'Homework1/JavaCode/backend/**'
     branches:
       - main
   workflow_dispatch:
