@@ -9,6 +9,7 @@ interface MapLocation {
     tourism: string;
     oneTourism: string;
     openingHours: string;
+    opening_hours: string;
     historic: string;
     religion: string;
     phone: string;

@@ -1,5 +1,4 @@
 export const cities = [
-  "Скопје",
   "Битола",
   "Прилеп",
   "Охрид",
@@ -15,10 +14,9 @@ export const cities = [
   "Tetovo",
   "Крива Паланка",
   "Kriva Palanka",
-  "skopje",
   "Radiovce",
   "Tenovo",
-  "cresevo",
+  "Cresevo",
   "Старо Нагоричане",
   "Ѕвегор",
   "Делчево",

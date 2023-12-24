@@ -19,7 +19,9 @@ function LeafletMap({
 }: {
   mapLocations: MapLocation[] | undefined;
   userLocation: LatLngExpression;
-}) {
+})
+  {
+
   useEffect(() => {
     createContext("da");
   }, []);
@@ -41,10 +43,18 @@ function LeafletMap({
           <Marker
             position={[Number(location.latitude), Number(location.longitude)]}
             key={location.id}
-          />
+          >
+            <Popup>{location.name}</Popup>
+          </Marker>
         ))}
 
-        <Marker position={userLocation} icon={customIcon}></Marker>
+
+        <Marker
+            position={userLocation}
+            icon={customIcon}
+        >
+          <Popup>Your Location</Popup>
+        </Marker>
       </MapContainer>
     </>
   );
