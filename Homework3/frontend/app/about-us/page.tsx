@@ -7,8 +7,8 @@ function About({ title }: { title: String }) {
           Filip Samardjiski, Viktor Vasilev, Blagoja Ovezoski, and Martin Patchev. As part of our university
           course in Design and Architecture of Software, we embarked on the journey to create a unique
           application focused on showcasing the rich cultural and historical heritage of Macedonia.
-          ByteVentureMK is not just an app; it's a testament to our commitment to innovation and education.
-          Join us as we navigate the digital realm to bring Macedonia's cultural tapestry closer to you.
+          ByteVentureMK is not just an app; its a testament to our commitment to innovation and education.
+          Join us as we navigate the digital realm to bring Macedonias cultural tapestry closer to you.
       </div>
     </div>
   );
@@ -19,10 +19,10 @@ function Mission({ title }: { title: String }) {
         <div className="bg-emerald-100 rounded-lg border-4 border-emerald-300 p-5 m-4">
             <div className="text-xl text-center font-bold"> {title}</div>
             <div className="p-1 text-center text-sm">
-                At ByteVentureMK, our mission is to seamlessly connect people with Macedonia's cultural and
+                At ByteVentureMK, our mission is to seamlessly connect people with Macedonias cultural and
                 historical wonders. Through our application, we aim to provide users with an immersive experience,
                 exploring the diverse heritage that our country holds. We strive to make ByteVentureMK a platform
-                that not only educates but also fosters a sense of pride and appreciation for Macedonia's rich history.
+                that not only educates but also fosters a sense of pride and appreciation for Macedonias rich history.
                 Our mission is fueled by a passion for technology, education, and cultural preservation, and we invite
                 you to be a part of this exciting journey.
             </div>
