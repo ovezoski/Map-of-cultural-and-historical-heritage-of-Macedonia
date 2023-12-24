@@ -14,6 +14,7 @@ export default function Menu({ router }: { router: AppRouterInstance }) {
 
   function logout() {
     setAuthToken("");
+    localStorage.setItem("authToken", "")
     router.push("/");
   }
 

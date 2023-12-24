@@ -117,7 +117,7 @@ export default function LocationsList({
 
           return (
             <div key={mapLocations.indexOf(m)}>
-              <ResultCard title={m.name} badges={badges} distance={distance} />
+              <ResultCard title={m.name} badges={badges} distance={distance} mid={m.id} />
             </div>
           );
         })}

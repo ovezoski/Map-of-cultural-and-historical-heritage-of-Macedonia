@@ -47,7 +47,7 @@ export default function Auth({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    if (authToken === "" && pathname !== "login") {
+    if (authToken === "" && pathname !== "/login" && pathname !== "/register") {
       router.push("/login");
     }
   }, [authToken, pathname, router]);

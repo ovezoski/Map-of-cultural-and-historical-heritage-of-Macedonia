@@ -6,7 +6,6 @@ import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Menu from "./Menu";
-import axios from "axios";
 import Auth from "./AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,12 +20,6 @@ export default function RootLayout({
   const router = useRouter();
 
   const pathname = usePathname();
-
-  useEffect(() => {
-    if (authToken === "" && pathname !== "login") {
-      router.push("/login");
-    }
-  }, [authToken, pathname, router]);
 
   return (
     <html lang="en">

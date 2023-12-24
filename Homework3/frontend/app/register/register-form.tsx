@@ -3,18 +3,18 @@
 import Image from "next/image";
 import Button from "../ui/components/Button";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
 
-export default function LoginForm() {
+export default function RegisterForm() {
   const router = useRouter();
   const [usernameValue, setUsernameValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
-  const { authToken, setAuthToken } = useContext(AuthContext) as AuthContext;
+  const { setAuthToken } = useContext(AuthContext) as AuthContext;
 
-  const handleLogin = async () => {
-    const res = await axios.post("http://localhost:8080/auth/login", {
+  const handleRegister = async () => {
+    const res = await axios.post("http://localhost:8080/auth/register", {
       username: `${usernameValue}`,
       password: `${passwordValue}`,
     });
@@ -24,12 +24,8 @@ export default function LoginForm() {
       return;
     }
 
-    setAuthToken(res.data.jwt);
-    localStorage.setItem("authToken", res.data.jwt);
-    localStorage.setItem("username", usernameValue);
-    localStorage.setItem("newUser", "0");
-
-    router.push("/");
+    localStorage.setItem("newUser", "1");
+    router.push("/login");
   };
 
   return (
@@ -48,9 +44,7 @@ export default function LoginForm() {
         </div>
 
         <div>
-          {localStorage.getItem("newUser") === "1" && <div className="text-2xl p-2 text-center">Login to your new account!</div>}
-          <div className="text-2xl p-2 text-center">Welcome back!</div>
-          <div className="p-2"> We are so excited to see you again! </div>
+          <div className="text-2xl p-2 text-center">Create an account now!</div>
 
           <div className="mb-2">
             <input
@@ -71,10 +65,8 @@ export default function LoginForm() {
             />
           </div>
 
-          <small onClick={() => router.push("/register")} className="text-emerald-400 cursor-pointer">{"Don't have an account?"}</small>
-
-          <div>
-            <Button title="Login" onClickFunc={handleLogin} />
+          <div className="mt-2">
+            <Button title="Register" onClickFunc={handleRegister} />
           </div>
         </div>
 

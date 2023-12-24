@@ -1,9 +1,14 @@
 package com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -38,4 +43,8 @@ public class MapLocation {
     @JsonProperty("place_of_worship")
     private String placeOfWorship;
     private String ruins;
+
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<Review> reviews;
 }
