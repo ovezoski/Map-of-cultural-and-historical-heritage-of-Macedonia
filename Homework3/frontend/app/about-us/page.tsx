@@ -5,7 +5,7 @@ function About({ title }: { title: String }) {
       <div className="p-1 text-center text-sm">
           Welcome to ByteVentureMK, a collaborative endeavor by five passionate students – Tamara Stojanova,
           Filip Samardjiski, Viktor Vasilev, Blagoja Ovezoski, and Martin Patchev. As part of our university
-          course in 'Design and Architecture of Software,' we embarked on the journey to create a unique
+          course in Design and Architecture of Software, we embarked on the journey to create a unique
           application focused on showcasing the rich cultural and historical heritage of Macedonia.
           ByteVentureMK is not just an app; it's a testament to our commitment to innovation and education.
           Join us as we navigate the digital realm to bring Macedonia's cultural tapestry closer to you.
