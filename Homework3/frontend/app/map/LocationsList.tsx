@@ -5,6 +5,9 @@ import ResultCard from "./ResultCard";
 import { calculateDistance, capitalizeAndReplace } from "./map.functions";
 import { cities } from "./cities";
 import { categories } from "./categories";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
+import { AuthContext } from "../AuthContext";
 
 export default function LocationsList({
   mapLocations,
@@ -25,6 +28,20 @@ export default function LocationsList({
   name: string;
   setName: (name: string) => void;
 }) {
+  const { authToken } = useContext(AuthContext) as AuthContext;
+  const [roles, setRoles] = useState<string[]>([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/user/roles", {
+        headers: { Authorization: `Bearer ${authToken}` },
+      })
+      .then((res) => {
+        setRoles(res.data);
+      })
+      .catch((e) => console.log(e));
+  }, [authToken]);
+
   return (
     <div className=" w-full lg:w-1/3 p-1">
       <div className="px-2">
@@ -120,6 +137,7 @@ export default function LocationsList({
           return (
             <div key={mapLocations.indexOf(m)}>
               <ResultCard
+                roles={roles}
                 title={m.name}
                 badges={badges}
                 distance={distance}

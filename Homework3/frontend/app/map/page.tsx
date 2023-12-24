@@ -56,6 +56,8 @@ export default function Map() {
         city: city || "",
         name: name || "",
         category: categoryValue || "",
+        latitude: userLocation[0 as keyof LatLngExpression] || "",
+        longitude: userLocation[1 as keyof LatLngExpression] || "",
       });
 
       const response = await axios.get(
@@ -69,7 +71,7 @@ export default function Map() {
     } catch (error) {
       console.error("Error fetching map locations:", error);
     }
-  }, [authToken, category, city, name]);
+  }, [authToken, category, city, name, userLocation]);
 
   useEffect(() => {
     fetchMapLocations();

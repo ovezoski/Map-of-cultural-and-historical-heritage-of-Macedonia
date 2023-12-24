@@ -16,32 +16,21 @@ export default function ResultCard({
   badges,
   distance,
   mid,
+  roles,
 }: {
   title: String;
   badges: String[];
   distance: Number;
   mid: string;
+  roles: any;
 }) {
-  const router = useRouter();
   const reviewsDiv = useRef() as MutableRefObject<HTMLDivElement>;
   const { authToken } = useContext(AuthContext) as AuthContext;
   const [reviews, setReviews] = useState<Review[]>([]);
   const [scoreValue, setScoreValue] = useState("");
   const [descriptionValue, setDescriptionValue] = useState("");
-  const [roles, setRoles] = useState<string[]>([]);
   const [editMode, setEditMode] = useState(false);
   const [editTitleValue, setEditTitleValue] = useState("");
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:8080/user/roles", {
-        headers: { Authorization: `Bearer ${authToken}` },
-      })
-      .then((res) => {
-        setRoles(res.data);
-      })
-      .catch((e) => console.log(e));
-  }, [authToken]);
 
   const handleReviews = async () => {
     reviewsDiv.current.style.display = "block";
