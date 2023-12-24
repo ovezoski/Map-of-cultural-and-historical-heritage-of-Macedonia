@@ -2,6 +2,7 @@ package com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalherit
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models.MapLocation;
+import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models.Review;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.repository.MapLocationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -12,10 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -200,5 +198,25 @@ public class MapLocationService {
             }
 
         return sort(list, pageable, latitude, longitude);
+    }
+
+    public Optional<MapLocation> findById(String id) {
+        return mapLocationRepository.findById(id);
+    }
+
+    public void addReview(MapLocation mapLocation, Review newReview) {
+        mapLocation.getReviews().add(newReview);
+        mapLocationRepository.save(mapLocation);
+    }
+
+    public void removeReview(MapLocation mapLocation, Review reviewToDelete) {
+        mapLocation.getReviews().remove(reviewToDelete);
+        mapLocationRepository.save(mapLocation);
+    }
+
+    public void editMapLocation(MapLocation mapLocation, String title) {
+        mapLocation.setName(title);
+        mapLocation.setEnName(title);
+        mapLocationRepository.save(mapLocation);
     }
 }
