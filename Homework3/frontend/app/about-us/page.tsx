@@ -1,18 +1,48 @@
-function Card({ title }: { title: String }) {
+function About({ title }: { title: String }) {
   return (
     <div className="bg-emerald-100 rounded-lg border-4 border-emerald-300 p-5 m-4">
       <div className="text-xl text-center font-bold"> {title}</div>
       <div className="p-1 text-center text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+          Welcome to ByteVentureMK, a collaborative endeavor by five passionate students – Tamara Stojanova,
+          Filip Samardjiski, Viktor Vasilev, Blagoja Ovezoski, and Martin Patchev. As part of our university
+          course in 'Design and Architecture of Software,' we embarked on the journey to create a unique
+          application focused on showcasing the rich cultural and historical heritage of Macedonia.
+          ByteVentureMK is not just an app; it's a testament to our commitment to innovation and education.
+          Join us as we navigate the digital realm to bring Macedonia's cultural tapestry closer to you.
       </div>
     </div>
   );
+}
+
+function Mission({ title }: { title: String }) {
+    return (
+        <div className="bg-emerald-100 rounded-lg border-4 border-emerald-300 p-5 m-4">
+            <div className="text-xl text-center font-bold"> {title}</div>
+            <div className="p-1 text-center text-sm">
+                At ByteVentureMK, our mission is to seamlessly connect people with Macedonia's cultural and
+                historical wonders. Through our application, we aim to provide users with an immersive experience,
+                exploring the diverse heritage that our country holds. We strive to make ByteVentureMK a platform
+                that not only educates but also fosters a sense of pride and appreciation for Macedonia's rich history.
+                Our mission is fueled by a passion for technology, education, and cultural preservation, and we invite
+                you to be a part of this exciting journey.
+            </div>
+        </div>
+    );
+}
+
+function Contact({ title }: { title: String }) {
+    return (
+        <div className="bg-emerald-100 rounded-lg border-4 border-emerald-300 p-5 m-4">
+            <div className="text-xl text-center font-bold"> {title}</div>
+            <div className="p-1 text-center text-sm">
+                We value your feedback and engagement. For any inquiries, suggestions, or collaboration opportunities,
+                feel free to reach out to us. Connect with the ByteVentureMK team via email at byteventuremk@email.com
+                or through our social media channels. Your input is crucial in shaping the future of ByteVentureMK,
+                and we look forward to hearing from you as we continue to enhance and expand our application.
+                Thank you for being a part of our venture!
+            </div>
+        </div>
+    );
 }
 
 export default function AboutUs() {
@@ -34,9 +64,9 @@ export default function AboutUs() {
       </div>
 
       <div className="lg:flex justify-around w-full xl:w-3/4">
-        <Card title="About us" />
-        <Card title="Our mission" />
-        <Card title="Contact us" />
+        <About title="About us" />
+        <Mission title="Our mission" />
+        <Contact title="Contact us" />
       </div>
     </div>
   );
