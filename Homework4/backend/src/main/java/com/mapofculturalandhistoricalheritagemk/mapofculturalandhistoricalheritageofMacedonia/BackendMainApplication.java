@@ -32,7 +32,7 @@ public class BackendMainApplication {
 	@Bean
 	CommandLineRunner run(RoleRepository roleRepository, UserRepository userRepository, MapLocationRepository mapLocationRepository, PasswordEncoder passwordEncoder) {
 		return args -> {
-			if (!roleRepository.findByAuthority("ADMIN").isPresent()) {
+			if (roleRepository.findByAuthority("ADMIN").isEmpty()) {
 				Role adminRole = roleRepository.save(new Role("ADMIN"));
 				roleRepository.save(new Role("USER"));
 
@@ -42,17 +42,19 @@ public class BackendMainApplication {
 				ApplicationUser admin = new ApplicationUser(1, "admin", passwordEncoder.encode("adminpassword"), roles);
 				userRepository.save(admin);
 			}
-
-			ObjectMapper mapper = new ObjectMapper();
-			TypeReference<List<MapLocation>> typeReference = new TypeReference<List<MapLocation>>() {};
-			InputStream inputStream = getClass().getClassLoader().getResourceAsStream("json/output.json");
-					//getResourceAsStream("/json/output.json");
-			try {
-				List<MapLocation> mapLocations = mapper.readValue(inputStream, typeReference);
-				mapLocationRepository.saveAll(mapLocations);
-			} catch (IOException e) {
-				System.out.println("Unable to seed locations. " + e.getMessage());
+			if (mapLocationRepository.count()==0){
+				ObjectMapper mapper = new ObjectMapper();
+				TypeReference<List<MapLocation>> typeReference = new TypeReference<List<MapLocation>>() {};
+				InputStream inputStream = getClass().getClassLoader().getResourceAsStream("json/output.json");
+				//getResourceAsStream("/json/output.json");
+				try {
+					List<MapLocation> mapLocations = mapper.readValue(inputStream, typeReference);
+					mapLocationRepository.saveAll(mapLocations);
+				} catch (IOException e) {
+					System.out.println("Unable to seed locations. " + e.getMessage());
+				}
 			}
+
 		};
 	}
 }
