@@ -15,6 +15,7 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private float score;
+    @Column(columnDefinition = "NVARCHAR(255)")
     private String description;
 
     @JsonIgnore

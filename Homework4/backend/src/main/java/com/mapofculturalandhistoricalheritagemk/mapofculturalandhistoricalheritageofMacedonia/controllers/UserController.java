@@ -2,9 +2,10 @@ package com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalherit
 
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models.ApplicationUser;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models.MapLocation;
-import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.models.Role;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.repository.UserRepository;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.services.MapLocationService;
+import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.services.UserService;
+import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.services.impl.MapLocationServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -22,7 +23,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserController {
     private final MapLocationService mapLocationService;
-    private final UserRepository userRepository;
+    private final UserService userService;
 
     @GetMapping("/")
     public String hello(Authentication auth) {
@@ -36,7 +37,7 @@ public class UserController {
 
     @GetMapping("/roles")
     public List<String> getRoles(Authentication authentication) {
-        ApplicationUser currUser = userRepository.findByUsername(authentication.getName()).orElseThrow(() -> new UsernameNotFoundException("user not found."));
+        ApplicationUser currUser = userService.findByUsername(authentication.getName());
         List<String> result = new ArrayList<>();
         currUser.getAuthorities().forEach(a -> result.add(a.getAuthority()));
 
