@@ -16,10 +16,11 @@ public interface MapLocationService {
 
     Optional<MapLocation> findById(String id);
 
-    void editMapLocation(MapLocation mapLocation, String title);
+    void editMapLocation(String mapLocationId, String title);
 
     Long count();
 
     List<MapLocation> saveAll(List<MapLocation> mapLocations);
+
     MapLocation save(MapLocation ml);
 }

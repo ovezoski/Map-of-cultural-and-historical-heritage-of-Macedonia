@@ -7,14 +7,13 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ReviewService {
-    void addReview(MapLocation mapLocation, Review newReview);
+    void removeReview(String mapLocationId, Integer reviewToDeleteId);
 
-    void removeReview(MapLocation mapLocation, Review reviewToDelete);
     void deleteById(Integer id);
 
-    List<Review> findByMapLocation(MapLocation currLocation);
+    List<Review> findByMapLocation(String idMapLocation);
 
-    void save(Review newReview);
+    void save(float score, String description, String idMapLocation , String authName);
 
     Optional<Review> findById(int reviewId);
 }

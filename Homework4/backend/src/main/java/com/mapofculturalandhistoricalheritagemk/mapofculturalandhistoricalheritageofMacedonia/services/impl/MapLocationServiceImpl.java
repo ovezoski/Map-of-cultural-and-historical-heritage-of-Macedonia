@@ -72,8 +72,8 @@ public class MapLocationServiceImpl implements MapLocationService {
                                       String latitude, String longitude) {
         List<MapLocation> list = mapLocationRepository.findAll();
 
-        //Name filter, City filter and Categories filter implemented with Strategy,
-        // nested with a second Strategy filter implemented in the Categories filter itself
+        //Name filter, City filter and Categories filter implemented with Strategy design pattern,
+        //nested with a second Strategy filter implemented in the Categories filter itself
         if(!name.isEmpty()) {
             list = NameFilter.getInstance().filter(list, name);
         }
@@ -93,10 +93,11 @@ public class MapLocationServiceImpl implements MapLocationService {
         return mapLocationRepository.findById(id);
     }
 
-    public void editMapLocation(MapLocation mapLocation, String title) {
-        mapLocation.setName(title);
-        mapLocation.setEnName(title);
-        mapLocationRepository.save(mapLocation);
+    public void editMapLocation(String mapLocationId, String title) {
+        MapLocation currLocation = this.findById(mapLocationId).orElseThrow(NoSuchElementException::new);
+        currLocation.setName(title);
+        currLocation.setEnName(title);
+        mapLocationRepository.save(currLocation);
     }
 
     @Override

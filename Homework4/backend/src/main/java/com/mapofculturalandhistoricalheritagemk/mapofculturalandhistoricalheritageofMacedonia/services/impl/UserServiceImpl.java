@@ -4,11 +4,13 @@ import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalherita
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.repository.UserRepository;
 import com.mapofculturalandhistoricalheritagemk.mapofculturalandhistoricalheritageofMacedonia.services.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -28,5 +30,13 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Override
     public ApplicationUser findByUsername(String username) {
         return userRepository.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("user not found."));
+    }
+
+    @Override
+    public List<String> getRolesForUser(String username){
+        ApplicationUser currUser = this.findByUsername(username);
+        List<String> result = new ArrayList<>();
+        currUser.getAuthorities().forEach(a -> result.add(a.getAuthority()));
+        return result;
     }
 }
