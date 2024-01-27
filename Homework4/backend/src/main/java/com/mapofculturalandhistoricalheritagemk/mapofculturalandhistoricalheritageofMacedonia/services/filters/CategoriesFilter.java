@@ -9,11 +9,28 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
 public class CategoriesFilter implements Filter{
-    private static final List<CategoryFilter> categoryFilters = new ArrayList<>(Arrays.asList(new AmenityFilter(), new BuildingFilter(), new DenominationFilter(),
-            new HistoricFilter(), new MemorialFilter(), new MuseumFilter(), new ReligionFilter(), new RuinsFilter(),
-            new TombFilter(), new TourismFilter()));
+    private static List<CategoryFilter> categoryFilters;
+    private static CategoriesFilter categoriesFilter;
+    private CategoriesFilter() {
+        categoryFilters = new ArrayList<>(Arrays.asList(AmenityFilter.getInstance(), BuildingFilter.getInstance(),
+                DenominationFilter.getInstance(), HistoricFilter.getInstance(), MemorialFilter.getInstance(),
+                MuseumFilter.getInstance(), ReligionFilter.getInstance(), RuinsFilter.getInstance(), TombFilter.getInstance(),
+                TourismFilter.getInstance()));
+    }
+
+    // Singleton with double-checked locking
+    public static CategoriesFilter getInstance() {
+        if (categoriesFilter == null) {
+            synchronized (CategoriesFilter.class) {
+                if (categoriesFilter == null) {
+                    categoriesFilter = new CategoriesFilter();
+                }
+            }
+        }
+        return categoriesFilter;
+    }
+
 
     @Override
     public List<MapLocation> filter(List<MapLocation> mapLocationList, String criteria) {

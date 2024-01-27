@@ -7,8 +7,25 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Component
 public class NameFilter implements Filter{
+
+    private NameFilter() {
+
+    }
+    private static NameFilter nameFilter;
+
+    //Singleton with double-checked locking
+    public static NameFilter getInstance() {
+        if (nameFilter == null) {
+            synchronized (NameFilter.class) {
+                if (nameFilter == null) {
+                    nameFilter = new NameFilter();
+                }
+            }
+        }
+        return nameFilter;
+    }
+
     @Override
     public List<MapLocation> filter(List<MapLocation> mapLocationList, String criteria) {
         String[] name_split_arr = criteria.split("\\s+");

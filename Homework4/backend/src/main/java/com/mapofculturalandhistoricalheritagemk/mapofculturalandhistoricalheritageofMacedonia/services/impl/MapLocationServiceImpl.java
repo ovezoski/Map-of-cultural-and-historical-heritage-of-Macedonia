@@ -17,24 +17,9 @@ import java.util.stream.Collectors;
 @Service
 public class MapLocationServiceImpl implements MapLocationService {
     private final MapLocationRepository mapLocationRepository;
-    private final NameFilter nameFilter;
-    private final CityFilter cityFilter;
-    private final CategoriesFilter categoriesFilter;
-//    private List<CategoryFilter> categoryFilters;
-
-    public MapLocationServiceImpl(MapLocationRepository mapLocationRepository, NameFilter nameFilter, CityFilter cityFilter, CategoriesFilter categoriesFilter) {
+    public MapLocationServiceImpl(MapLocationRepository mapLocationRepository) {
         this.mapLocationRepository = mapLocationRepository;
-        this.nameFilter = nameFilter;
-//        this.categoryFilters = populateCategoryFilters();
-        this.cityFilter = cityFilter;
-        this.categoriesFilter = categoriesFilter;
     }
-
-//    private List<CategoryFilter> populateCategoryFilters() {
-//        return new ArrayList<>(Arrays.asList(new AmenityFilter(), new BuildingFilter(), new DenominationFilter(),
-//                new HistoricFilter(), new MemorialFilter(), new MuseumFilter(), new ReligionFilter(), new RuinsFilter(),
-//                new TombFilter(), new TourismFilter()));
-//    }
 
     private static Double haversine(double lat1, double lon1, double lat2, double lon2) {
         double R = 6371;  // Earth's radius in kilometers
@@ -86,21 +71,19 @@ public class MapLocationServiceImpl implements MapLocationService {
     public Page<MapLocation> searchBy(String name, String category, String city, Pageable pageable,
                                       String latitude, String longitude) {
         List<MapLocation> list = mapLocationRepository.findAll();
-//        String[] name_split_arr = name.split("\\s+");
-//        List<String> name_split_list = List.of(name_split_arr);
 
         //Name filter, City filter and Categories filter implemented with Strategy,
         // nested with a second Strategy filter implemented in the Categories filter itself
         if(!name.isEmpty()) {
-            list = nameFilter.filter(list, name);
+            list = NameFilter.getInstance().filter(list, name);
         }
 
         if(!city.isEmpty()) {
-            list = cityFilter.filter(list, city);
+            list = CityFilter.getInstance().filter(list, city);
         }
 
         if(!category.isEmpty() ) {
-            list = categoriesFilter.filter(list, category);
+            list = CategoriesFilter.getInstance().filter(list, category);
         }
 
         return sort(list, pageable, latitude, longitude);
