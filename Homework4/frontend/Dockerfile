@@ -57,10 +57,8 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 FROM nginx:alpine
 
-COPY --from=builder /app/.next/standalone /usr/share/nginx/html/
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone /usr/share/nginx/html/
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
-
-CMD ["nginx", "-g", "daemon off;"]
 
 EXPOSE 3000
 
@@ -70,4 +68,4 @@ ENV HOSTNAME "0.0.0.0"
 
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
-CMD ["node", "server.js"]
+CMD ["nginx", "-g", "daemon off;"]
