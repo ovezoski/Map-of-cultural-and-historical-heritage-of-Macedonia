@@ -6,7 +6,7 @@ name: Build and deploy JAR app to Azure Web App - dians-finki
 on:
   push:
     paths:
-      - 'Homework1/JavaCode/backend/**'
+      - 'Homework4/backend/**'
     branches:
       - main
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Maven
-        working-directory: Homework1/JavaCode/Backend/ 
+        working-directory: Homework4/backend/
         run: mvn clean install
 
       - name: Upload artifact for deployment job
