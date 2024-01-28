@@ -1,14 +1,31 @@
 version: "3.9"
 services:
     backend:
-        image: dians1container.azurecr.io/backend
+        image: filipsam789/api
         container_name: backend
         build:
-            context: ./backend
+            context: ./microservices/api-gateway
         ports:
             - "8080:8080"
+        depends_on:
+            - maplocations
+            - userauth
+    maplocations:
+        image: filipsam789/maplocations
+        container_name: maplocations
+        build:
+            context: ./microservices/map-locations-reviews
+        ports:
+            - "1111:1111"
+    userauth:
+        image: filipsam789/userauth
+        container_name: userauth
+        build:
+            context: ./microservices/user-authentication
+        ports:
+            - "2222:2222"
     frontend:
-        image: dians1container.azurecr.io/frontend
+        image: filipsam789/frontend
         container_name: frontend
         build:
             context: ./frontend
